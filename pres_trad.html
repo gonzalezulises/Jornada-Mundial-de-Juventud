@@ -43,18 +43,33 @@
                     z-index: 20;
                 }
             }
+
             img.pie {
                 height: 20px; 
             }
+
             img.nobor {
                 border: 0px !important; 
                 padding: 50px 
             }
+
+            table.center{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
            .reveal h1 { font-size: 3.00em; }
            .reveal h2 { font-size: 2.31em;	}
            .reveal h3 { font-size: 1.89em;	}
            .reveal h4 { font-size: 1.62em;	}
            .reveal h5 { font-size: 1.20em;	}
+
+           .reveal p { text-align: left;}
+
+           p.center {text-align: center;}
+
+           li.nobu { list-style-type: none; }
         </style>
 
 	</head>
@@ -70,7 +85,7 @@
                     <h1 >Curso de Gestión de Proyectos para ONG</h1>
                 </section>
                 <section>
-                    <section id="introduccion">
+                    <section id="intro00">
                         <h2>Introducción:</h2>
                         <ul class="simple">
                             <li>¿Quién eres?</li>
@@ -78,12 +93,12 @@
                             <li>¿Cuál es el último proyecto en el que has estado implicado y cuál fue tu papel en él?</li>
                         </ul>
                     </section>
-                    <section id="expectativas">
+                    <section id="intro01">
                         <h2>Expectativas...</h2>
                     </section>
                 </section>
                 <section>
-                    <section id="necesidades-de-project-management-en-ongs">
+                    <section id="neces00">
                         <h2>Necesidades de Gestión de Proyectos en ONG:</h2>
                         <ul class="simple">
                             <li>Importancia del éxito en los proyectos de desarrollo</li>
@@ -96,13 +111,13 @@
                             <li>Liderazgo de Voluntarios</li>
                         </ul>
                     </section>
-                    <section id="es-el-control-y-evaluacion-diferente-de-la-gestion-de-proyectos">
+                    <section id="neces01">
                         <h3>¿Es el Control y Evaluación diferente de la Gestión de Proyectos?</h3>
                         <img class='nobor' src="img/me_dif_pm.svg" />
                     </section>
                 </section>
-                <section id="empecemos-con-unas-definiciones0">
-                    <section id="empecemos-con-unas-definiciones1">
+                <section>
+                    <section id="defin00">
                         <h2>Empecemos con unas definiciones:</h2>
                         <ul class="simple">
                             <li>Proyecto</li>
@@ -111,29 +126,29 @@
                             <li>Portafolio</li>
                         </ul>
                     </section>
-                    <section id="empecemos-con-algunas-definiciones2">
+                    <section id="defin01">
                         <h3>Proyecto</h3>
                         <blockquote>
                             Un esfuerzo temporal para crear un producto único, un servicio o un resultado.
                         </blockquote>
-                        <p class="fragment">Tiene un principio y un final</p>
-                        <p class="fragment">Es único</p>
-                        <p class="fragment">Consume recursos</p>
+                        <p class="center fragment">Tiene un principio y un final</p>
+                        <p class="center fragment">Es único</p>
+                        <p class="center fragment">Consume recursos</p>
                     </section>
-                    <section id="empecemos-con-algunas-definiciones3">
+                    <section id="defin02">
                         <h3>Gestión de proyectos</h3>
                         <blockquote>
                             Aplicación de conocimientos, habilidades, herramientas y
                             técnicas a las actividades del proyecto para alcanzar los requisitos
                             establecidos.
                         </blockquote>
-                        <p class="fragment">... se consigue a través de 5 grupos de procesos: 
+                        <p class="center fragment">... se consigue a través de 5 grupos de procesos: 
                             <strong>Inicio</strong>, <strong>Planificación</strong>,
                             <strong>Ejecución</strong>, <strong>Supervisión y Control</strong> y 
                             <strong>Cierre</strong>
                         </p>
                     </section>
-                    <section id="empecemos-con-algunas-definiciones4">
+                    <section id="defin03">
                         <h3>Programa</h3>
                         <blockquote>
                             Un grupo de proyectos relacionados y gestionados de manera coordinada
@@ -141,7 +156,7 @@
                             gestionándolos de manera individual.
                         </blockquote>
                     </section>
-                    <section id="empecemos-con-algunas-definiciones5">
+                    <section id="defin04">
                         <h3>Portafolio</h3>
                         <blockquote>
                             Grupo de proyectos y/o programas y de otros trabajos que se agrupan para
@@ -149,54 +164,51 @@
                             estratégicos.
                         </blockquote>
                     </section>
-                    <section id="relacion-entre-proyecto-programa-y-portafolio">
+                    <section id="defin05">
                         <h4>Relación entre Proyecto, Programa y Portafolio:</h4>
                         <img class='nobor' src="img/p_p_n_p_rel.svg" />
                     </section>
-                    <section id="el-gestor-de-proyectos">
+                    <section id="defin06">
                         <h3>El Gestor de Proyectos:</h3>
-                        <ul>
-                            <li><p class="first">No es miembro del Consejo de Gobierno o Junta de Proyecto</p>
-                            </li>
-                            <li class='fragment'><p class="first">Responsable:</p>
-                                <ul class="simple">
+                            <p>No es miembro del Consejo de Gobierno o Junta de Proyecto</p>
+                            <ul>
+                            <li class='nobu fragment'>Responsable:
+                                <ul>
                                     <li>ante la Junta del Proyecto...</li>
                                     <li>de la compleción del proyecto...</li>
                                     <li>de acuerdo al plan establecido</li>
-                                </ul>
-                            </li>
-                            <li class='fragment'><p class="first">Realiza las actividades:</p>
-                                <ul class="simple">
+                                </ul></li>
+                            <li class='nobu fragment'>Realiza las actividades:
+                                <ul>
                                     <li>Planificar</li>
                                     <li>Organizar recursos y repartir tareas</li>
                                     <li>Medir e informar del progreso</li>
-                                </ul>
-                            </li>
-                        </ul>
+                                </ul></li>
+                            </ul>
                     </section>
-                    <section id="interesados-del-proyecto-desc">
+                    <section id="defin06">
                         <h3>Interesados del Proyecto</h3>
                         <blockquote>
                             Aquellas personas que o bien están afectadas por los resultados del proyecto
                             o bien pueden afectar a los resultados del proyecto.
                         </blockquote>
-                        <p class='fragment'>ONG, Equipo del proyecto, Beneficiarios del proyecto, Industria, Comunidad,
+                        <p class='center fragment'>ONG, Equipo del proyecto, Beneficiarios del proyecto, Industria, Comunidad,
                         Empleados, Financiadores públicos, Patrocinadores, Voluntarios, Gobierno, Grupos
                         de interés, etc.</p>
                     </section>
-                    <section id="esquema-interesados">
+                    <section id="defin07">
                         <h4>Interesados del Proyecto</h4>
                         <img class='nobor' src="img/stakeholders.svg" />
                     </section>
                 </section>
-                <section id="caso-de-estudio">
+                <section id="casoes">
                     <h2>Caso de estudio</h2>
                     <p>
                         Elaborar un caso de estudio con identificación de interesados
                     </p>
                 </section>
                 <section>
-                    <section id="id5">
+                    <section id="gpintro">
                         <h2>Grupos de procesos y Áreas de conocimiento</h2>
                         <p>El Ciclo de Vida de todos los Proyectos pasa por cinco Grupos de
                         Procesos: <strong>Inicio</strong>, <strong>Planificación</strong>,
@@ -210,25 +222,25 @@
                             </p>
                             <p class='fragment'>En total hay <strong>47 Procesos</strong> repartidos entre los Grupos de procesos y Áreas de conocimiento.  </p>
                     </section>
-                    <section id="tabla-grupos-procesos">
+                    <section id="gptabla">
                         <h4>Los cinco Grupos de Procesos son:</h4>
                         <img src="img/tabla_grupos_procesos.svg" />
                     </section>
-                    <section id="relacion-grupos-procesos">
+                    <section id="gprela">
                         <h4>Relación entre los Grupos de Procesos</h4>
                         <img class='nobor' src="img/rel_grup_proc.svg" />
                     </section>
-                    <section id="tabla-procesos-01">
+                    <section id="gparea">
                         <h4>Grupos de procesos y Áreas de conocimiento</h4>
                         <img style='padding: 5px; height: 600px' src="img/tabla_procesos.png" />
                     </section>
-                    <section id="importancia-de-los-grupos-de-procesos">
+                    <section id="gpimpo">
                         <h4>Importancia de los Grupos de Procesos</h4>
                         <p>Debemos entender cuáles son los cinco Grupos de Procesos por los que pasan
                         <strong>TODOS</strong> los proyectos</p>
                         <p>(lo único que varía entre proyectos es cuanto tiempo pasa en cada Grupo...)</p>
                     </section>
-                    <section id="por-que-grupos-de-procesos">
+                    <section id="gpporque">
                         <h4>¿Por qué pasar por TODOS los grupos de procesos?</h4>
                         <img class='nobor' style='padding: 0px' src="img/margodth_proyectos.png" />
                         </br>
@@ -236,11 +248,11 @@
                     </section>
                 </section>
                 <section>
-                    <section id="gp-inicio">
+                    <section id="gpini00">
                         <h3>Grupo de Procesos de Inicio</h3>
                         <img class='nobor'  style='padding: 0px' src="img/grupo_procesos_inicio.svg" />
                     </section>
-                    <section id="gp-inicio-dac">
+                    <section id="gpini01">
                         <h4>4.1. Desarrollar el Acta de Constitución:</h4>
                         <ul>
                             <li>Formalmente autoriza a un proyecto o a una fase de proyecto</li>
@@ -254,7 +266,7 @@
                             desarrollos tecnológicos, necesidades de negocio...</li>
                         </ul>
                     </section>
-                    <section id="gp-inicio-contac">
+                    <section id="gpini02">
                         <h5>Contenidos del Acta de Constitución:</h5>
                         <ul class="simple">
                             <li>Propósito</li>
@@ -266,9 +278,9 @@
                             <li>Estimaciones de Coste</li>
                             <li>...</li>
                         </ul>
-                        <p class='fragment'><strong>Autorización por escrito</strong></p>
+                        <p class='center fragment'><strong>Autorización por escrito</strong></p>
                     </section>
-                    <section id="gp-inicio-id-interesados-1">
+                    <section id="gpini03">
                         <h4>13.1. Identificar a los Interesados:</h4>
                         <ul>
                             <li>Crear un registro de personas y grupos con capacidad de impacto o afectados por el proyecto</li>
@@ -279,7 +291,7 @@
                             resultados, ejecución y compleción del mismo</li>
                         </ul>
                     </section>
-                    <section id="gp-inicio-id-interesados-2">
+                    <section id="gpini04">
                         <h5>13.1. Identificar a los Interesados:</h5>
                         <ul>
                             <li>El Gestor de Proyectos debe administrar la influencia de los mismos con
@@ -292,11 +304,11 @@
                     </section>
                 </section>
                 <section>
-                    <section id="gp-plan">
+                    <section id="gppla00">
                         <h4>Grupo de Procesos de Planificación</h4>
                         <img class='nobor'  style='padding: 0px' src="img/grupo_procesos_planificacion.svg" />
                     </section>
-                    <section id="gp-plan-def">
+                    <section id="gppla01">
                         <h4>Definición</h4>
                         <p>La Planificación en el contexto de la Gestión de Proyectos implica la
                         documentación de acciones necesarias para definir, preparar, integrar y
@@ -322,10 +334,10 @@
                         </ol>
                         </aside>
                     </section>
-                    <section id="gp-plan-inte">
+                    <section id="gpplaint">
                         <h4>Gestión de la Integración del Proyecto</h4>
                         <ul>
-                        <li>Desarrollar el <strong>Plan de Gestión del Proyecto</strong>[4.2.]</li>
+                        <li class='nobu'>Desarrollar el <strong>Plan de Gestión del Proyecto [4.2.]</strong></li>
                             <ul>
                                 <li>Documento detallado y bien estructurado que define el estilo
                                 del Proyecto en sí mismo</li>
@@ -335,20 +347,20 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-alca-1">
+                    <section id="gpplaalc00">
                         <h4>Gestión del Alcance del Proyecto:</h4>
                         <ul>
-                            <li>Durante la planificación, el <strong>Alcance</strong> se define y describe de manera
+                            <li class='nobu'>Durante la planificación, el <strong>Alcance</strong> se define y describe de manera
                             minuciosa ya que se tiene más información sobre el propio Proyecto</li>
                             <ul>
-                                <li>Planificar la Gestión del Alcance [5.1.]</li>
-                                <li>Recolección de Requisitos [5.2.]</li>
-                                <li>Definición del Alcance [5.3.]</li>
-                                <li>Creación de la Estructura de Desglose del Trabajo (EDT) [5.4.]</li>
+                                <li><strong>Planificar la Gestión del Alcance [5.1.]</strong></li>
+                                <li><strong>Recolección de Requisitos [5.2.]</strong></li>
+                                <li><strong>Definición del Alcance [5.3.]</strong></li>
+                                <li><strong>Creación de la Estructura de Desglose del Trabajo (EDT) [5.4.]</strong></li>
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-alca-2">
+                    <section id="gpplaalc01">
                         <h5>EDT:</h5>
                         <ul class="simple">
                             <li>Identificar los Entregables y el trabajo relacionado</li>
@@ -358,7 +370,7 @@
                             componentes del Proyecto pueden ser productos o servicios)</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-alca-resu">
+                    <section id="gpplaalc02">
                         <h4>Resultados de la planificación del Alcance </h4>
                         <ul>
                             <li>Plan de gestión del alcance</li>
@@ -372,18 +384,18 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-tiem-1">
+                    <section id="gpplatiem00">
                         <h4>Gestión del Tiempo del Proyecto</h4>
                         <ul class="simple">
-                            <li>Planificar la Gestión del Tiempo [6.1.]</li>
-                            <li>Definir las actividades [6.2.]</li>
-                            <li>Secuenciar las actividades [6.3.]</li>
-                            <li>Estimar los recursos de las actividades [6.4.]</li>
-                            <li>Estimar la duración de las actividades [6.5.]</li>
-                            <li>Desarrollar el Cronograma [6.6.]</li>
+                            <li><strong>Planificar la Gestión del Tiempo [6.1.]</strong></li>
+                            <li><strong>Definir las actividades [6.2.]</strong></li>
+                            <li><strong>Secuenciar las actividades [6.3.]</strong></li>
+                            <li><strong>Estimar los recursos de las actividades [6.4.]</strong></li>
+                            <li><strong>Estimar la duración de las actividades [6.5.]</strong></li>
+                            <li><strong>Desarrollar el Cronograma [6.6.]</strong></li>
                         </ul>
                     </section>
-                    <section id="gp-plan-tiem-2">
+                    <section id="gpplatiem01">
                         <h5>Secuenciar las actividades [6.3.]</h5>
                         <ul class="simple">
                             <li>De final a principio</li>
@@ -402,13 +414,13 @@
                             </ul>
                         </aside>
                     </section>
-                    <section id="gp-plan-tiem-3">
+                    <section id="gpplatiem02">
                         <h5>Desarrollar el Cronograma [6.6.]</h5>
                         <p>Actividades divergentes: única predecesora con múltiples sucesoras</p>
                         <p>Actividades convergentes: múltiples predecesoras con una única sucesora</p>
                         <img class='nobor' src="img/pla_pro_gr_ex.svg" />
                     </section>
-                    <section id="gp-plan-tiem-4">
+                    <section id="gpplatiem03">
                         <h5>Conceptos claves de gestión de Cronogramas:</h5>
                         <ul class="simple">
                             <li>Crashing</li>
@@ -431,7 +443,7 @@
                             </ul>
                         </aside>
                     </section>
-                    <section id="gp-plan-tiem-resu">
+                    <section id="gpplatiem04">
                         <h4>Resultados de la planificación del Tiempo </h4>
                         <ul>
                             <li>Plan de gestión del cronograma</li>
@@ -439,21 +451,21 @@
                             <li>Datos del cronograma</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-cost">
+                    <section id="gpplacost00">
                         <h4>Gestión del Coste del Proyecto</h4>
                         <ul class="simple">
-                            <li>Planificar la Gestión de Costes [7.1.]</li>
-                            <li>Estimar Costes [7.2.]</li>
+                            <li><strong>Planificar la Gestión de Costes [7.1.]</strong></li>
+                            <li><strong>Estimar Costes [7.2.]</strong></li>
                             <ul class="simple">
                                 <li>Variables</li>
                                 <li>Fijos</li>
                                 <li>Directos</li>
                                 <li>Indirectos</li>
                             </ul>
-                            <li>Determinar el presupuesto [7.3.]</li>
+                            <li><strong>Determinar el presupuesto [7.3.]</strong></li>
                         </ul>
                     </section>
-                    <section id="gp-plan-cost-herr">
+                    <section id="gpplacost01">
                         <h5>Herramientas de Coste y Presupuesto:</h5>
                         <ul>
                             <li>Estimación análoga (Top-Down)</li>
@@ -464,7 +476,7 @@
                             <li>Coste de la calidad</li>
                         </ul>
                     </section>
-                    <section id='gp-plan-cost-esq'>
+                    <section id='gpplacost02'>
                         <h5>Esquema del presupuesto</h5>
                         <img class='nobor' src="img/esquema_presupuesto.svg" />
                          <aside class='notes'>
@@ -477,7 +489,7 @@
                              </ul>
                          </aside>
                     </section>
-                    <section id="gp-plan-cost-value-eng">
+                    <section id="gpplacost03">
                         <h5>Ingeniería del Valor</h5>
                         <p>La Ingeniería del Valor es una aproximación sistémica a encontrar la forma
                         <strong>menos costosa</strong> de completar el mismo trabajo</p>
@@ -485,7 +497,7 @@
                             recurso</strong> para completar el trabajo, de la <strong>manera más rápida</strong> y con la <strong>mejor
                             calidad</strong> y <strong>manteniendo el coste</strong> total del Proyecto bajo control</p>
                     </section>
-                    <section id="gp-plan-cost-resu">
+                    <section id="gpplacost04">
                         <h4>Resultados de la Planificación de Costes</h4>
                         <ul>
                             <li>Plan de gestión del coste</li>
@@ -493,10 +505,10 @@
                             <li>Requisitos de financiación del Proyecto</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-cali-1">
+                    <section id="gpplacali00">
                         <h4>Gestión de la Calidad del Proyecto</h4>
                         <ul>
-                            <li>Planificar la Gestión de la calidad Calidad [8.1.]:</li>
+                            <li class='nobu'><strong>Planificar la Gestión de la calidad Calidad [8.1.]</strong>:</li>
                             <ul>
                                 <li>Usando Análisis de Coste / Beneficio (evitando el «chapado en oro» que puede
                                 disparar los costes sin reportar beneficios al cliente)</li>
@@ -504,7 +516,7 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-cali-2">
+                    <section id="gpplacali01">
                         <h5>El Grado y la Calidad no son lo mismo</h5>
                         <ul>
                             <li>La baja Calidad es un problema pero el bajo Grado no tiene porqué</li>
@@ -512,7 +524,7 @@
                             <li>Pueden haber distintos grados de Calidad</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-cali-resu">
+                    <section id="gpplacali02">
                         <h4>Resultados de la Planificación de Calidad</h4>
                         <ul>
                             <li>Plan de gestión de la calidad</li>
@@ -521,10 +533,10 @@
                             <li>Listas de chequeo de la calidad</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-rrhh">
+                    <section id="gpplarrhh00">
                         <h4>Gestión de Recursos Humanos del Proyecto</h4>
                         <ul>
-                            <li>Planificar la Gestión de Recursos Humanos [9.1.]:</li>
+                            <li class='nobu'><strong>Planificar la Gestión de Recursos Humanos [9.1.]</strong>:</li>
                             <ul>
                                 <li>Identificar perfiles, roles, responsabilidades, competencias, etc</li>
                                 <li>Identificar las restricciones del Proyecto: </li>
@@ -538,10 +550,10 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-rrhh-resu">
+                    <section id="gpplarrhh01">
                         <h4>Resultados de la planificación de Recursos Humanos</h4>
                         <ul class="simple">
-                            <li>Plan de gestión de recurso humanos</li>
+                            <li class='nobu'>Plan de gestión de recurso humanos</li>
                             <ul>
                                 <li>Roles y Responsabilidades</li>
                                 <li>Organigramas del Proyecto</li>
@@ -550,17 +562,17 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-comu">
+                    <section id="gpplacomu00">
                         <h4>Gestión de las Comunicaciones del Proyecto</h4>
                         <ul>
-                            <li>Planificar la Gestión de las Comunicaciones [10.1.]</li>
+                            <li class='nobu'><strong>Planificar la Gestión de las Comunicaciones [10.1.]</strong></li>
                             <ul>
                                 <li>Hay que entender <strong>qué</strong> debe ser comunicado, a <strong>quién</strong> y con qué <strong>frecuencia</strong></li>
                                 <li>El Gestor de Proyectos debe gastar gran parte de su tiempo comunicándose</li>
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-comu-1">
+                    <section id="gpplacomu01">
                         <h5>El Plan de Comunicación depende de:</h5>
                         <ul class="simple">
                             <li>Requisitos de información de los interesados</li>
@@ -579,7 +591,7 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-comu-resu">
+                    <section id="gpplacomu02">
                         <h4>Resultados de la planificación de las Comunicaciones</h4>
                         <ul class="simple">
                             <li>Plan de gestión de las comunicaciones</li>
@@ -593,25 +605,25 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-ries">
+                    <section id="gpplaries00">
                         <h4>Gestión de los Riesgos</h4>
                         <ul class="simple">
-                            <li>Planificar la gestión de Riesgos [11.1.]</li>
-                            <li>Identificar los Riesgos [11.2.]</li>
-                            <li>Realizar el Análisis Cualitativo de los Riesgos [11.3.]</li>
-                            <li>Realizar el Análisis Cuantitativo de los Riesgos [11.4.]</li>
+                            <li><strong>Planificar la gestión de Riesgos [11.1.]</strong></li>
+                            <li><strong>Identificar los Riesgos [11.2.]</strong></li>
+                            <li><strong>Realizar el Análisis Cualitativo de los Riesgos [11.3.]</strong></li>
+                            <li><strong>Realizar el Análisis Cuantitativo de los Riesgos [11.4.]</strong></li>
                         </ul>
                     </section>
-                    <section id="gp-plan-ries-plan">
+                    <section id="gpplaries01">
                         <h5>Planificar la gestión de Riesgos [11.1.]</h5>
                         <ul>
-                            <li>Se emplean</li>
+                            <li class='nobu'>Se emplean</li>
                             <ul>
                                 <li>Enunciado del alcance</li>
                                 <li>Planes de Costes / Tiempo y Comunicaciones</li>
                                 <li>Registro de interesados</li>
                             </ul>
-                            <li>Se genera el Plan de Gestión de Riesgos</li>
+                            <li class='nobu'>Se genera el Plan de Gestión de Riesgos</li>
                             <ul>
                                 <li>Metodología a emplear y acciones</li>
                                 <li>Roles y responsabilidades</li>
@@ -619,19 +631,21 @@
                                 <li>Mediciones y tolerancias</li>
                             </ul>
                         </ul>
-                        <p>Todos los miembros de un Proyecto deberían colaborar en la identificación de
+                        <p class='center fragment'><strong>Todos</strong> los miembros de un Proyecto deberían colaborar en la identificación de
                         Riesgos</p>
                     </section>
-                    <section id="gp-plan-ries-id-ries">
+                    <section id="gpplaries02">
                         <h5>Identificar los Riesgos [11.2.]:</h5>
-                        <p>El resultado es el <strong>Registro de Riesgos</strong></p>
-                        <ul class="simple">
-                            <li>Herramientas para la identificación de Riesgos:</li>
-                            <ul>
-                                <li>Lluvia de ideas</li>
-                                <li>Técnica Delphi </li>
-                                <li>Entrevistas</li>
-                                <li>Análisis DAFO</li>
+                        <ul>
+                            <li class='nobu'> El resultado es el <strong>Registro de Riesgos</strong> </li>
+                            <ul class="simple">
+                                <li>Herramientas para la identificación de Riesgos:</li>
+                                <ul>
+                                    <li>Lluvia de ideas</li>
+                                    <li>Técnica Delphi </li>
+                                    <li>Entrevistas</li>
+                                    <li>Análisis DAFO</li>
+                                </ul>
                             </ul>
                         </ul>
                         <aside class='notes'>
@@ -639,7 +653,7 @@
                             que se reduce el sesgo)</p>
                         </aside>
                     </section>
-                    <section id="gp-plan-ries-id-registro">
+                    <section id="gpplaries03">
                         <h5>Registro de Riesgos</h5>
                         <ul>
                             <li>Lista de riesgos identificados</li>
@@ -648,7 +662,7 @@
                             <li>Lista de posibles respuestas</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-ries-ancual">
+                    <section id="gpplaries04">
                         <h5>Realizar el Análisis Cualitativo de los Riesgos [11.3.]</h5>
                         <ul class="simple">
                             <li>Establecer Prioridades entre Objetivos</li>
@@ -660,10 +674,10 @@
                             semáforo - rojo, amarillo, verde)</li>
                         </aside>
                     </section>
-                    <section id="gp-plan-ries-mat-sev">
+                    <section id="gpplaries05">
                         <img class='nobor' height='600px' src="img/matriz_prb_imp.svg" />
                     </section>
-                    <section id="gp-plan-ries-ancuan">
+                    <section id="gpplaries06">
                         <h5>Realizar el Análisis Cuantitativo de los Riesgos</h5>
                         <p>El Análisis Cuantitativo se realiza <strong>SOLO</strong> en los Riesgos que se hayan
                         priorizado en el Análisis Cuantitativo por potencialmente ser de impacto
@@ -678,17 +692,17 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-ries-resu">
+                    <section id="gpplaries07">
                         <h4>Resultados de la planificación de los Riesgos </h4>
                         <ul class="simple">
                             <li>Plan de gestión de Riesgos</li>
                             <li>Registro de riesgos</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-adqu">
+                    <section id="gpplaadqu00">
                         <h4>Gestión de las Adquisiciones del Proyecto</h4>
                         <ul>
-                            <li>Planificar las Adquisiciones [12.1.]</li>
+                            <li class='nobu'><strong>Planificar las Adquisiciones [12.1.]</strong></li>
                             <ul>
                                 <li>La decisión es si hay que <strong>«hacer o comprar»</strong></li>
                                 <li>Se alcanza por juicio de expertos, investigaciones de mercado, reuniones...</li>
@@ -697,7 +711,7 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-adqu-resu">
+                    <section id="gpplaadqu01">
                         <h4>Resultados de la planificación de las Adquisiciones</h4>
                         <ul>
                             <li>Plan de gestión de las adquisiciones</li>
@@ -710,10 +724,10 @@
                             <li>Criterios de selección</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-inter">
+                    <section id="gpplainter00">
                         <h4>Gestión de los Interesados</h4>
                         <ul>
-                            <li>Planificar la Gestión de los Interesados [13.2.]</li>
+                            <li class='nobu'><strong>Planificar la Gestión de los Interesados [13.2.]</strong></li>
                             <ul>
                                 <li>Identificar niveles de compromiso y participación</li>
                                 <li>Interrelaciones y conflictos</li>
@@ -722,44 +736,44 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-plan-inter-resu">
+                    <section id="gpplainter01">
                         <h4>Resultado de la planificación de la gestión de los Interesados</h4>
                         <ul>
                             <li>Plan de gestión de los interesados</li>
                         </ul>
                     </section>
-                    <section id="gp-plan-fin">
+                    <section id="gppla02">
                         <h3>Grupo de Procesos de Planificación</h3>
                         <p>Un último consejo:</p>
-                        <p class='fragment'>No hay ningún sustituto a la documentación</br>
-                             Siempre hay que documentar</p>
+                        <p class='center fragment'>No hay ningún sustituto a la documentación</br>
+                        <strong>Siempre</strong> hay que documentar</p>
                     </section>
                 </section>
                 <section>
-                    <section id="gp-e-syc">
+                    <section id="gpesc">
                         <h4>Grupo de Procesos de Ejecución y de Seguimiento y Control</h4>
                         <img class='nobor' style='padding: 0px' height='600px' src="img/grupo_procesos_esyc.svg" />
                     </section>
-                    <section id="grupos-de-procesos-de-ejecucion">
+                    <section id="gpeje00">
                         <h4>Grupos de Procesos de Ejecución:</h4>
                         <p>El Grupo de Procesos de Ejecución consiste en los Procesos que se realizan
                         para completar el trabajo definido en el Plan de Gestión del Proyecto para
                         satisfacer las especificaciones del Proyecto</p>
                         <ul class="fragment">
-                            <li>Dirigir y Gestionar los Trabajos del Proyecto [4.3.]</li>
-                            <li>Realizar el Aseguramiento de la Calidad [8.2.]</li>
-                            <li>Adquirir el Equipo del Proyecto [9.2.]</li>
-                            <li>Desarrollar el Equipo del Proyecto [9.3.]</li>
-                            <li>Dirigir el Equipo del Proyecto [9.4.]</li>
-                            <li>Distribuir información [10.3.]</li>
-                            <li>Efectuar las Adquisiciones [12.2.]</li>
-                            <li>Gestionar el Compromiso de los Interesados [13.3.]</li>
+                            <li><strong>Dirigir y Gestionar los Trabajos del Proyecto [4.3.]</strong></li>
+                            <li><strong>Realizar el Aseguramiento de la Calidad [8.2.]</strong></li>
+                            <li><strong>Adquirir el Equipo del Proyecto [9.2.]</strong></li>
+                            <li><strong>Desarrollar el Equipo del Proyecto [9.3.]</strong></li>
+                            <li><strong>Dirigir el Equipo del Proyecto [9.4.]</strong></li>
+                            <li><strong>Distribuir información [10.3.]</strong></li>
+                            <li><strong>Efectuar las Adquisiciones [12.2.]</strong></li>
+                            <li><strong>Gestionar el Compromiso de los Interesados [13.3.]</strong></li>
                         </ul>
                     </section>
-                    <section id="gp-eje-rrhh-resu">
+                    <section id="gpejerrhh00">
                         <h4>Resultados de la planificación de Recursos Humanos</h4>
                         <ul class="simple">
-                            <li>Plan de gestión de recurso humanos</li>
+                            <li class='nobu'>Plan de gestión de recurso humanos</li>
                             <ul>
                                 <li>Roles y Responsabilidades</li>
                                 <li>Organigramas del Proyecto</li>
@@ -768,142 +782,150 @@
                             </ul>
                         </ul>
                     </section>
-                    <section id="gp-eje-rrhh-rasci">
-                        <h4>Matriz RASCI</h4>
+                    <section id="gpejerrhh01">
+                        <h5>Matriz RASCI</h5>
                         <img class='nobor' src="img/rasci.jpg" />
+                        <div >
+                            <table class='center' border="0">
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Responsible [Agente]</li>
+                                            <li>Accountable [Responsable]</li>
+                                            <li>Support [Apoya]</li>
+                                        </ul>
+                                    </td>
+                                    <td style="vertical-align:top">
+                                         <ul>
+                                             <li>Consult [Debe consultársele]</li>
+                                             <li>Inform [Debe informársele]</li>
+                                         </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="gpejerrhh02">
+                        <h4>Adquiriendo el equipo [9.2.]</h4>
+                        <ul>
+                            <li class='nobu'>Recursos:</li>
                             <ul>
-                                <li>Responsible [Agente]</li> 
-                                <li>Accountable [Responsable]</li> 
-                                <li>Support [Apoya]</li> 
-                                <li>Consult [Debe consultársele]</li> 
-                                <li>Inform [Debe informársele]</li> 
+                                <li>Asignaciones previas</li>
+                                <ul>
+                                    <li>Relaciones previas con el proyecto</li>
+                                </ul>
+                                <li>Negociación</li>
+                                <ul>
+                                    <li>Con otras organizaciones, equipos, etc</li>
+                                </ul>
+                                <li>Adquisición</li>
+                                <ul>
+                                    <li>Contrataciones o subcontrataciones</li>
+                                </ul>
+                                <li>Equipos virtuales</li>
+                                <ul>
+                                    <li>A través de comunicaciones digitales</li>
+                                    <li>Requiere gran planificación de comunicaciones</li>
+                                </ul>
+                                <li>Análisis multicriterio</li>
+                                <ul>
+                                    <li>Permite tomar decisiones de forma más adecuada</li>
+                                </ul>
                             </ul>
+                        </ul>
                     </section>
-                    <section id="recursos-humanos-adquiriendo-el-equipo">
-                    <h4>Recursos Humanos - Adquiriendo el equipo</h4>
-                    <ul>
-                    <li><p class="first">Recursos pre-asignados</p>
-                    <p>** Experiencia, relaciones previas con el proyecto</p>
-                    </li>
-                    <li><p class="first">Negociación</p>
-                    <p>** Con otros grupos, con unidades funcionales, con organizaciones externas</p>
-                    </li>
-                    <li><p class="first">Adquisición</p>
-                    <p>** Contratación, temporalidad</p>
-                    </li>
-                    <li><p class="first">Equipos virtuales</p>
-                    <p>** Localizaciones lejanas, equipo de trabajo local, consultores
-                    ** Apoyado en tecnología
-                    ** La planificación de las comunicaciones es muy importante
-                    ** Protocolos</p>
-                    </li>
-                    </ul>
+                    <section id="gpejerrhh03">
+                        <h5>Adquiriendo el equipo</h5>
+                        <ul>
+                            <li class='nobu'>Los equipos pueden no resultar como se planifican:</li>
+                            <ul class="simple">
+                                <li>Afectan los Riesgos, el Cronograma, el Coste, las Comunicaciones, todo se
+                                debe tener en cuenta</li>
+                                <li>Además también hay que tener en cuenta otras opciones: legales,
+                                regulaciones, obligaciones que deben vigilarse</li>
+                            </ul>
+                        </ul>
                     </section>
-                    <section id="id43">
-                    <h4>Recursos Humanos - Adquiriendo el equipo</h4>
-                    <p>Los equipos pueden no resultar como se planifican:</p>
-                    <ul class="simple">
-                    <li>Afectan los Riesgos, el Cronograma, el Coste, las Comunicaciones, todo se
-                    debe tener en cuenta</li>
-                    <li>Además también hay que tener en cuenta otras opciones: legales,
-                    regulaciones, obligaciones que deben vigilarse</li>
-                    </ul>
+                    <section id="gpejerrhh04">
+                        <h4>Desarrollando el equipo [9.3.]</h4>
+                        <ul>
+                            <li class='nobu'>Objetivos del Desarrollo del Equipo:</li>
+                            <ul class="simple">
+                                <li>Alinear esfuerzos</li>
+                                <li>Facilitar el trabajo a los demás</li>
+                                <li>Efecto Medicci</li>
+                                <li>Conseguir lealtad al proyecto</li>
+                                <li>Generar y aumentar confianza</li>
+                            </ul>
+                        </ul>
                     </section>
-                    <section id="recursos-humanos-desarrollando-el-equipo">
-                    <h4>Recursos Humanos - Desarrollando el equipo</h4>
-                    <p>Objetivos del Desarrollo del Equipo:</p>
-                    <ul class="simple">
-                    <li>Aumentar el conocimiento y los niveles de habilidad, lo cual tiene un
-                    impacto directo en lo Entregables, el Cronograma, los Costes y la Calidad</li>
-                    <li>Mejorar el trabajo en equipo, el sentimiento de confianza y entendimiento,
-                    aumenta la moral y reduce conflictos</li>
-                    <li>Crear una cultura de equipo dinámica y cohesiva, lo que mejora al
-                    productividad individual y de equipo</li>
-                    </ul>
+                    <section id="gpejerrhh05">
+                        <h5>Desarrollando el equipo</h5>
+                        <ul>
+                            <li class='nobu'>Recursos: </li>
+                            <ul class="simple">
+                                <li>Habilidades interpersonales</li>
+                                <li>Formación</li>
+                                <li>Team Building</li>
+                                <li>Reglas básicas</li>
+                                <li>War Room</li>
+                                <li>Reconocimientos y recompensas</li>
+                                <li>Valoración del personal</li>
+                            </ul>
+                        </ul>
                     </section>
-                    <section id="id44">
-                    <h4>Recursos Humanos - Desarrollando el equipo</h4>
-                    <p>La escalera de Tuckman Ladder - Etapas en el desarrollo del equipo</p>
-                    <ul class="simple">
-                    <li>Formación</li>
-                    <li>Conflicto</li>
-                    <li>Generación de normas</li>
-                    <li>Rendimiento</li>
-                    <li>Cese</li>
-                    </ul>
+                    <section id="gpejerrhh06">
+                        <h5>Desarrollando el equipo</h5>
+                        <p class='center'>Liderazgo situacional</p>
+                        <img class='nobor' src="img/liderazgo_sit.svg" />
+                        <aside class='notes'>
+                            <p>Directing – provide specific instructions and closely supervise performance </p>
+                            <p>Coaching – Share ideas and facilitate decision making </p>
+                            <p>Delegating – Turns over responsibility for decisions and implementation.  </p>
+                            <p>Supporting – explains decisions and provide opportunity for clarification </p>
+                        </aside>
                     </section>
-                    <section id="id45">
-                    <h4>Recursos Humanos - Desarrollando el equipo</h4>
-                    <p>Puntos importantes en el Desarrollo del Equipo:</p>
-                    <ul class="simple">
-                    <li>Habilidades interpersonales</li>
-                    <li>Formación</li>
-                    <li>Reglas del juego</li>
-                    <li>Co-localización</li>
-                    <li>Recompensas y reconocimientos</li>
-                    </ul>
+                    <section id="gpejerrhh07">
+                        <h4>Dirigir el Equipo del Proyecto [9.4.]</h4>
+                        <ul>
+                            <li class='nobu'>Recursos: </li>
+                            <ul>
+                                <li>Observación y Conversación</li>
+                                <li>Evaluaciones de rendimiento</li>
+                                <li>Resolución de conflictos</li>
+                                <li>Habilidades interpersonales</li>
+                            </ul>
+                        </ul>
                     </section>
-                    <section id="recursos-humanos-gestionando-al-equipo">
-                    <h4>Recursos Humanos - Gestionando al equipo</h4>
-                    <p>Observación y Conversación</p>
-                    <p>Evaluaciones de rendimiento</p>
-                    <p>Resolución de conflictos</p>
-                    <p>Habilidades interpersonales</p>
+                    <section id="gpejerrhh08">
+                        <h5>Dirigir el Equipo del Proyecto</h5>
+                        <ul>
+                            <li class='nobu'>Resolución de conflictos:</li>
+                            <ul class="simple">
+                                <li>Inevitables entre personas</li>
+                                <li>Pueden ser beneficiosos</li>
+                                <li>Resultado del Cambio</li>
+                                <li>Pueden y deben manejarse</li>
+                            </ul>
+                        </ul>
                     </section>
-                    <section id="id46">
-                    <h4>Recursos Humanos - Gestionando al equipo</h4>
-                    <p>Resolución de conflictos:</p>
-                    <ul class="simple">
-                    <li>Retirar / Eludir</li>
-                    <li>Suavizar / Acomodar</li>
-                    <li>Comprometer</li>
-                    <li>Forzar</li>
-                    <li>Colaborar</li>
-                    <li>Confrontar / Resolución de problemas</li>
-                    </ul>
+                    <section id="gpejerrhh09">
+                        <h5>Resolución de conflictos</h5>
+                        <img class='nobor' src="img/resolucion_conf.svg" />
                     </section>
-                    <section id="id47">
-                    <h4>Recursos Humanos - Gestionando al equipo</h4>
-                    <p>Estilos de liderazgo</p>
-                    <p>Autocrático [Director]</p>
-                    <ul class="simple">
-                    <li>El Gestor solicita poca o ninguna información al Equipo</li>
-                    <li>El Gestor toma las decisiones a solas</li>
-                    </ul>
-                    <p>Consultor autócrata [Persuasor]</p>
-                    <ul class="simple">
-                    <li>El Gestor solicitia información del Equipo de forma intensiva</li>
-                    <li>El Gestor toma la decisión a solas</li>
-                    </ul>
-                    <p>Gestor Consensuador [Participativo]</p>
-                    <ul class="simple">
-                    <li>Los problemas se proponen en equipo para discutir de manera abierta y
-                    recopilar información</li>
-                    <li>El Equipo toma la decisión</li>
-                    </ul>
-                    <p>Gestor de accionistas [Delegador]</p>
-                    <ul class="simple">
-                    <li>Se comparte poca información en el grupo</li>
-                    <li>El Equipo tiene la autoridad final para tomar la decisión</li>
-                    </ul>
-                    </section>
-                        <section id="gp-plan-rrhh-crece">
-                            <p>El Gestor de Proyecto debe implicar a los Interesados El o Ella debe
-                            trabajar con el Equipo del Proyecto para que desarrollen sus habilidades y
-                            completen el trabajo, de manera precisa, en tiempo y haciendo crecer al
-                            equipo en el proceso</p>
-                        </section>
-                        <section id="id29">
-                        <h4>Grupo de Procesos de Planificación</h4>
-                        <p>Gestión de Recursos Humanos del Proyecto</p>
-                        <p>¡Cuidado con el efecto Halo!</p>
+                    <section id="gpejerrhh10">
+                        <h5>¡Cuidado con el efecto Halo!</h5>
                         <p>Se produce cuando la calidad de una persona influencia una decisión</p>
-                        <p>Por ejemplo: El señor A es una persona con grandes capacidades tecnológicas,
-                        por lo que será un buen gestor de proyectos tecnológicos Solo con estos
-                        datos no podríamos afirmar que las habilidades tecnológicas del señor A le
-                        vayan a convertir automáticamente en un buen Gestor de Proyectos</p>
-                        <p>¡No hay que dejarse cegar por el Halo!</p>
-                        </section>
+                        <div id="ejemplo" class='fragment'>
+                            <p>Por ejemplo: <p>
+                            <p>El señor A es una persona con grandes capacidades tecnológicas,
+                            por lo que será un buen gestor de proyectos tecnológicos</p>
+                        </div>
+                        <p class='fragment'> Solo con estos datos no podríamos afirmar que las habilidades 
+                        tecnológicas del señor A le vayan a convertir automáticamente en un buen 
+                        Gestor de Proyectos</p>
+                        <p class='center fragment'><strong>¡No hay que dejarse cegar por el Halo!</strong></p>
+                    </section>
                     <section id="gestion-de-las-comunicaciones-del-proyecto">
                     <h2>Gestión de las Comunicaciones del Proyecto</h2>
                     <p>Entradas de la etapa de planificación e inicio:</p>
@@ -983,38 +1005,40 @@
                     </ul>
                     </section>
                     <section id="dirigir-y-gestionar-la-ejecucion-del-proyecto">
-                    <h2>Dirigir y Gestionar la Ejecución del Proyecto</h2>
-                    <p>Gestión de Calidad del Proyecto</p>
-                    <ul class="simple">
-                    <li>Realizar el Aseguramiento de la Calidad</li>
-                    </ul>
-                    <p>Gestión de los Recursos Humanos del Proyecto</p>
-                    <ul class="simple">
-                    <li>Adquirir el Equipo del Proyecto</li>
-                    <li>Desarrollar el Equipo del Proyecto</li>
-                    <li>Dirigir el Equipo del Proyecto</li>
-                    </ul>
-                    <p>Gestión de las comunicaciones del Proyecto</p>
-                    <ul class="simple">
-                    <li>Distribuir información</li>
-                    <li>Gestionar las Expectativas de los Interesados</li>
-                    </ul>
-                    <p>Gestión de las Adquisiciones del Proyecto</p>
-                    <ul class="simple">
-                    <li>Llevar a cabo las Adquisiciones</li>
-                    </ul>
-                    <p>Gestión de la Integración del Proyecto</p>
-                    <ul class="simple">
-                    <li>Dirigir y Gestionar los Trabajos del Proyecto</li>
-                    </ul>
+                        <h4>Dirigir y Gestionar la Ejecución del Proyecto [4.3.] </h4>
+                        <ul>
+                            <li>Gestión de Calidad del Proyecto</li>
+                            <ul class="simple">
+                                <li>Realizar el Aseguramiento de la Calidad</li>
+                            </ul>
+                            <li>Gestión de los Recursos Humanos del Proyecto</li>
+                            <ul class="simple">
+                                <li>Adquirir el Equipo del Proyecto</li>
+                                <li>Desarrollar el Equipo del Proyecto</li>
+                                <li>Dirigir el Equipo del Proyecto</li>
+                            </ul>
+                            <li>Gestión de las comunicaciones del Proyecto</li>
+                            <ul class="simple">
+                                <li>Distribuir información</li>
+                                <li>Gestionar las Expectativas de los Interesados</li>
+                            </ul>
+                            <li>Gestión de las Adquisiciones del Proyecto</li>
+                            <ul class="simple">
+                                <li>Llevar a cabo las Adquisiciones</li>
+                            </ul>
+                            <li>Gestión de la Integración del Proyecto</li>
+                            <ul class="simple">
+                                <li>Dirigir y Gestionar los Trabajos del Proyecto</li>
+                            </ul>
+                        </ul>
                     </section>
                     <section id="conclusion">
-                    <h2>Conclusión</h2>
-                    <p>Este Proceso implica coordinar gente y recursos, así como integrar y llevar
-                    a cabo las actividades descritas en el Plan de Gestión del Proyecto</p>
-                    <p>Los resultados pueden requerir realizar nuevas planificaciones y crear
-                    nuevas Líneas Base</p>
-                    <p>Gran parte del Presupuesto del Proyecto se emplea en esta fase</p>
+                        <h4>Conclusión</h4>
+                        <p>Este Proceso implica coordinar gente y recursos, así como integrar y llevar
+                        a cabo las actividades descritas en el Plan de Gestión del Proyecto</p>
+                        <p>Los resultados pueden requerir realizar nuevas planificaciones y crear
+                        nuevas Líneas Base</p>
+                        <p>Gran parte del Presupuesto del Proyecto se emplea en esta fase</p>
                     </section>
                     <section id="id48">
                     <h2>Ejercicio</h2>
