@@ -4,9 +4,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title> Dirección de Proyectos para ONG's: Introducción</title>
+        <title> Dirección de Proyectos para ONG</title>
 
-        <meta name="description" content="Introducción al curso sobre PM para ONG's que se está preparando para la CVONGD's">
+        <meta name="description" content="Traducción del material de PMI Mumbai Chapter ">
         <meta name="author" content="Pedro-Juan Ferrer Matoses">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,11 +14,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+
         <link rel="stylesheet" href="css/reveal.min.css">
         <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
-        <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
 
         <!-- If the query includes 'print-pdf', include the PDF print sheet -->
         <script>
@@ -30,11 +29,11 @@
                 document.getElementsByTagName( 'head' )[0].appendChild( link );
             }
         </script>
-
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
-        <style>
+
+        <style type="text/css">
             @media screen {
                 div.pie {
                     position: absolute; 
@@ -51,14 +50,33 @@
 
             img.nobor {
                 border: 0px !important; 
+                padding: 50px 
             }
 
+            table.center{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
+           .reveal h1 { font-size: 3.00em; }
+           .reveal h2 { font-size: 2.31em;    }
+           .reveal h3 { font-size: 1.89em;    }
+           .reveal h4 { font-size: 1.62em;    }
+           .reveal h5 { font-size: 1.20em;    }
+
+           p.left {text-align: left;}
+
            li.nobu { list-style-type: none; }
-       </style>
+
+           .nano {font-size: 50% !important;  }
+        </style>
+
     </head>
 
     <body>
-
+        <!--to print to pdf: html?print-pdf-->
+        <!--to add the footer: pdftk slides.pdf stamp footer.pdf output slides_print.pdf-->
         <div class="reveal">
 
             <!-- Any section element inside of this container is displayed as a slide -->
@@ -167,20 +185,20 @@
                         <h4>Agenda viernes 4</h4> <!--30 diapos-->
                         <ul>
                             <li class='nobu'>Hola y qué hacemos aquí</li> <!-- 8 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/neces00">Necesidades de PM en ONG</a></li> <!-- 2 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/defin00">Definiciones</a></li> <!-- 8 Diapos -->
+                            <li class='nobu'><a href="#neces00">Necesidades de PM en ONG</a></li> <!-- 2 Diapos -->
+                            <li class='nobu'><a href="#defin00">Definiciones</a></li> <!-- 8 Diapos -->
                             <li class='nobu'><strong>Descanso</strong></li>
-                            <li class='nobu'><a href="pres_trad.html#/casoes">Caso de Estudio</a></li> <!-- 2 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/ciclovida00">Ciclos de Vida</a></li> <!-- 2 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/gpintro">Grupos de Procesos</a></li> <!-- 5 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/gparea00">Áreas de Conocimiento</a></li> <!-- 3 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/gpini00">Grupo de Procesos de Inicio</a></li> <!-- 5 Diapos -->
+                            <li class='nobu'><a href="#casoes">Caso de Estudio</a></li> <!-- 2 Diapos -->
+                            <li class='nobu'><a href="#ciclovida00">Ciclos de Vida</a></li> <!-- 2 Diapos -->
+                            <li class='nobu'><a href="#gpintro">Grupos de Procesos</a></li> <!-- 5 Diapos -->
+                            <li class='nobu'><a href="#gparea00">Áreas de Conocimiento</a></li> <!-- 3 Diapos -->
+                            <li class='nobu'><a href="#gpini00">Grupo de Procesos de Inicio</a></li> <!-- 5 Diapos -->
                         </ul>
                     </section>
                     <section>
                         <h4>Agenda sábado 5</h4>
                         <ul>
-                            <li class='nobu'><a href="pres_trad.html#/gppla00">Grupo de Procesos de Planificación</a></li> <!-- 15/33 Diapos -->
+                            <li class='nobu'><a href="#gppla00">Grupo de Procesos de Planificación</a></li> <!-- 15/33 Diapos -->
                             <ul>
                                 <li>Introducción</li> <!-- 2 Diapos -->
                                 <li>Integración</li> <!-- 1 Diapos -->
@@ -190,7 +208,7 @@
                                 <li>Calidad</li> <!-- 2 Diapos -->
                             </ul>
                             <li class='nobu'><strong>Descanso</strong></li>
-                            <li class='nobu'><a href="pres_trad.html#/gpplarrhh00">Grupo de Procesos de Planificación II</a></li> <!-- 18/33 Diapos -->
+                            <li class='nobu'><a href="#gpplarrhh00">Grupo de Procesos de Planificación II</a></li> <!-- 18/33 Diapos -->
                             <ul>
                                 <li>Recursos Humanos</li> <!-- 2 Diapos -->
                                 <li>Comunicaciones</li> <!-- 3 Diapos -->
@@ -204,37 +222,1398 @@
                     <section>
                         <h4>Agenda viernes 11</h4>
                         <ul>
-                            <li class='nobu'><a href="pres_trad.html#/gpesc">Grupo de Procesos de Ejecución</a></li> <!-- 17/24 Diapos -->
+                            <li class='nobu'><a href="#gpesc">Grupo de Procesos de Ejecución</a></li> <!-- 17/24 Diapos -->
                             <ul>
                                 <li>Introducción</li> <!-- 3 Diapos --> 
                                 <li>Recursos Humanos</li> <!-- 11 Diapos --> 
                                 <li>Comunicaciones</li> <!-- 3 Diapos --> 
-                            </ul>
-                            <li class='nobu'><strong>Descanso</strong></li>
-                            <li class='nobu'><a href="pres_trad.html#/gpejecomin00">Grupo de Procesos de Ejecución II</a></li> <!-- 7/24 Diapos -->
-                            <ul>
                                 <li>Interesados</li> <!-- 2 Diapos --> 
                                 <li>Calidad</li> <!-- 2 Diapos --> 
+                            </ul>
+                            <li class='nobu'><strong>Descanso</strong></li>
+                            <li class='nobu'><a href="#gpejeadqu00">Grupo de Procesos de Ejecución II</a></li> <!-- 7/24 Diapos -->
+                            <ul>
                                 <li>Adquisiciones</li> <!-- 2 Diapos --> 
                                 <li>Conclusión</li> <!-- 1 Diapos --> 
                             </ul>
-                            <li class='nobu'><a href="pres_trad.html#/gpsco00">Grupo de Procesos de Seguimiento y Control</a></li><!-- 7 Diapos -->
+                            <li class='nobu'><a href="#gpsco00">Grupo de Procesos de Seguimiento y Control</a></li><!-- 7 Diapos -->
                         </ul>
                     </section>
                     <section>
                         <h4>Agenda sábado 12</h4>
                         <ul>
-                            <li class='nobu'><a href="pres_trad.html#/gpcie00">Grupo de Procesos de Cierre</a></li><!-- 7 Diapos -->
-                            <li class='nobu'><a href="pres_trad.html#/respprof00">Responsabilidad Profesional</a></li><!-- 3 Diapos -->
+                            <li class='nobu'><a href="#gpcie00">Grupo de Procesos de Cierre</a></li><!-- 7 Diapos -->
+                            <li class='nobu'><a href="#respprof00">Responsabilidad Profesional</a></li><!-- 3 Diapos -->
                             <li class='nobu'>Evaluación y Cierre del Curso</li>
                         </ul>
                     </section>
                 </section>
                 <section>
+                    <section id="neces00">
+                        <h2>Necesidades de Gestión de Proyectos en ONG:</h2>
+                        <ul>
+                            <li>Alta influencia de factores externos</li>
+                            <li>Gestionar el cambio</li>
+                            <li>Gestionar requisitos cambiantes</li>
+                            <li>Patrones de financiación cambiantes</li>
+                            <li>Desarrollo frente a Caridad</li>
+                            <li>Limitaciones presupuestarias</li>
+                            <li>Gestión de equipos</li>
+                            <li>Liderazgo de Voluntarios</li>
+                        </ul>
+                    </section>
+                    <section id="neces01">
+                        <h3>¿Es el Control y Evaluación diferente de la Gestión de Proyectos?</h3>
+                        <img class='nobor' src="img/me_dif_pm.svg" />
+                    </section>
+                </section>
+                <section>
+                    <section id="defin00">
+                        <h2>Empecemos con unas definiciones:</h2>
+                        <ul>
+                            <li>Proyecto</li>
+                            <li>Gestión de proyectos</li>
+                            <li>Programa</li>
+                            <li>Portafolio</li>
+                            <li>Gestor de proyectos</li>
+                            <li>Interesados</li>
+                        </ul>
+                    </section>
+                    <section id="defin01">
+                        <h3>Proyecto</h3>
+                        <blockquote>
+                            &laquo;Un esfuerzo temporal para crear un producto único, un servicio o un resultado.&raquo;
+                        </blockquote>
+                        <p class="fragment">Tiene un principio y un final</p>
+                        <p class="fragment">Es único</p>
+                        <p class="fragment">Consume recursos</p>
+                    </section>
+                    <section id="defin02">
+                        <h3>Gestión de proyectos</h3>
+                        <blockquote>
+                            &laquo;Aplicación de conocimientos, habilidades, herramientas y
+                            técnicas a las actividades del proyecto para alcanzar los requisitos
+                            establecidos.&raquo;
+                        </blockquote>
+                        <p class="fragment">&hellip; se consigue a través de 5 grupos de procesos: 
+                            <strong>Inicio</strong>, <strong>Planificación</strong>,
+                            <strong>Ejecución</strong>, <strong>Supervisión y Control</strong> y 
+                            <strong>Cierre</strong>
+                        </p>
+                    </section>
+                    <section id="defin03">
+                        <h3>Programa</h3>
+                        <blockquote>
+                            &laquo;Un grupo de proyectos relacionados y gestionados de manera coordinada
+                            para obtener un beneficio y un control que no se podría obtener
+                            gestionándolos de manera individual.&raquo;
+                        </blockquote>
+                    </section>
+                    <section id="defin04">
+                        <h3>Portafolio</h3>
+                        <blockquote>
+                            &laquo;Grupo de proyectos y/o programas y de otros trabajos que se agrupan para
+                            facilitar su efectiva gestión de cara a conseguir unos objetivos
+                            estratégicos.&raquo;
+                        </blockquote>
+                        <aside class='notes'>
+                            <p>
+                                Al Portafolio se le llama <strong>Plan</strong> en algunas organizaciones
+                            </p>
+                        </aside>
+                    </section>
+                    <section id="defin05">
+                        <h4>Relación entre Proyecto, Programa y Portafolio:</h4>
+                        <img class='nobor' src="img/p_p_n_p_rel.svg" />
+                    </section>
+                    <section id="defin06">
+                        <h3>El Director de Proyectos:</h3>
+                            <p>No es miembro del Consejo de Gobierno o Junta de Proyecto</p>
+                            <ul>
+                            <li class='nobu fragment'>Responsable:
+                                <ul>
+                                    <li>ante la Junta del Proyecto&hellip;</li>
+                                    <ul>
+                                        <li>de la compleción del proyecto&hellip;</li>
+                                        <li>de acuerdo al plan establecido</li>
+                                    </ul>
+                                </ul></li>
+                            <li class='nobu fragment'>Realiza las actividades:
+                                <ul>
+                                    <li>Planificar</li>
+                                    <li>Organizar recursos y repartir tareas</li>
+                                    <li>Medir e informar del progreso</li>
+                                </ul></li>
+                            </ul>
+                    </section>
+                    <section id="defin06">
+                        <h3>Interesados del Proyecto</h3>
+                        <blockquote>
+                           &laquo;Aquellas personas que o bien están afectadas por los resultados del proyecto
+                            o bien pueden afectar a los resultados del proyecto.&raquo;
+                        </blockquote>
+                        <p> También llamados <strong>Actores Interesados</strong> </p>
+                        <p class='fragment'><em>ONG, Equipo del proyecto, Beneficiarios del proyecto, Industria, Comunidad,
+                        Empleados, Financiadores públicos, Patrocinadores, Voluntarios, Gobierno, Grupos
+                        de interés, etc.</em></p>
+                        <p class='fragment'>No, no son sólo los <strong>destinatarios</strong> </p>
+                    </section>
+                    <section id="defin07">
+                        <h4>Interesados del Proyecto</h4>
+                        <img class='nobor' src="img/stakeholders.svg" />
+                    </section>
+                </section>
+                <section>
+                    <section id="casoes" >
+                        <h2>Caso de estudio</h2>
+                        <h3>Embarazo adolescente en Bolivia</h3>
+                        <p>
+                        Los países del área andina son los únicos a nivel mundial 
+                        en el que el embarazo adolescente ha aumentado en los últimos 30 años.
+                        </p>
+                        <p>
+                        La prevención del embarazo adolescente es una prioridad 
+                        de las políticas públicas para los países del área andina.
+                        </p>
+                        <p>
+                        En el caso de Bolivia el índice de embarazo adolescente es el 
+                        más alto de la región con un 21% de las adolescentes. 
+                        Especialmente en el <strong>Departamento del Beni</strong>, 
+                        con un <strong>22%</strong> de embarazo adolescente.
+                        </p>
+                    </section>
+                    <section>
+                        <img src="img/taller.png" />
+                        <aside class='notes'>
+                            <ul>
+                                <li>Adolescentes de los dos barrios</li>
+                                <li>Unidades educativas vinculadas a los dos barrios destinatarios</li>
+                                <li>Juntas vecinales de los barrios 13 de Abril y Niña Auntónoma</li>
+                                <li>Alcaldía de Trinidad</li>
+                                <li>Prefectura Departamental del Beni y su Servicio Departamental de Gestión Social</li>
+                                <li>Otras entidades no gubernamentales en la zona</li>
+                                <li>Sindicatos de mototaxistas de Trinidad</li>
+                                <li>Televisión y radio local de Trinidad</li>
+                                <li>Iglesias en la zona</li>
+                                <li>Centro de salud vinculado con los dos barrios.</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section id="ciclovida00">
+                        <h2>Ciclo de Vida de un proyecto</h2> 
+                        <blockquote>
+                            &laquo;Fases por las que pasa un proyecto desde su inicio hasta su cierre.&raquo;
+                        </blockquote>
+                        <ul>
+                            <li class='fragment'>Dependen de la organización y del tipo de proyecto</li>
+                            <li class='fragment'>Existe un cierre/apertura entre fases:
+                                <ul>
+                                    <li>Check Point</li>
+                                    <li>Exit Gate</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="ciclovida01">
+                        <h4>Tipos de Ciclo de Vida</h4>
+                        <div style='display: flex; width: 100%;'>
+                            <div style='width: 50%;'>
+                                <p> Predictivo </p>
+                                <img src="img/cv_predic.svg" />
+                            </div>
+                            <div class='fragment' style='width: 50%;'>
+                                <p>Iterativo</p>
+                                <img src="img/cv_iterat.svg" />
+                            </div>
+                        </div>
+                        <div class='fragment'>
+                            <p>Adaptativo</p>
+                            <img src="img/cv_adapta.svg" />
+                        </div>
+                    </section>
+                    <section id="gpintro">
+                        <h2>Grupos de procesos</h2>
+                        <p>El Ciclo de Vida de todos los Proyectos pasa por cinco Grupos de
+                        Procesos: <strong>Inicio</strong>, <strong>Planificación</strong>,
+                            <strong>Ejecución</strong>, <strong>Supervisión y Control</strong> y 
+                            <strong>Cierre</strong>
+                        </p>
+                        <p class='fragment'>
+                            No confundir <strong>Grupos de Procesos</strong> con <strong>Fases</strong> del Ciclo de Vida
+                        </p>
+                    </section>
+                    <section id="gptabla">
+                        <h4>Los cinco Grupos de Procesos son:</h4>
+                        <img src="img/tabla_grupos_procesos.svg" />
+                    </section>
+                    <section id="gprela">
+                        <h5>Relación entre los Grupos de Procesos</h5>
+                        <img class='nobor' src="img/rel_grup_proc.svg" />
+                    </section>
+                    <section id="gpimpo">
+                        <h5>Importancia de los Grupos de Procesos</h5>
+                        <p>Debemos entender cuáles son los cinco Grupos de Procesos por los que pasan
+                        <strong>TODOS</strong> los proyectos</p>
+                        <img  style='height: 450px' class='nobor' src="img/esfu_proc.svg" />
+                        <aside class='notes'>
+                            <p>(lo único que varía entre proyectos es cuanto tiempo pasa en cada Grupo&hellip;)</p>
+                        </aside>
+                    </section>
+                    <section id="gpporque">
+                        <h5>¿Por qué pasar por TODOS los grupos de procesos?</h5>
+                        <img class='nobor' style='padding: 0px' src="img/margodth_proyectos.png" />
+                        </br>
+                        <a class='nano' href="https://openclipart.org/detail/16706/projects---(proyectos)-by-margodth-16706">Imagen obtenida de OpenClipArt</a>
+                    </section>
+                    <section id="gparea00">
+                        <p>Los Procesos también están agrupados por Áreas de Conocimiento:</p>
+                        <img height='550px' src="img/tabla_areas_conocimiento.svg" />
+                    </section>
+                    <section id="gparea">
+                        <h5>Grupos de procesos y Áreas de conocimiento</h5>
+                        <img class='nobor' style='padding: 5px;'  height='650px' src="img/tabla_procesos.svg" />
+                    </section>
+                    <section id="gpproceso">
+                        <h4>¿Qué es un proceso?</h4>
+                        <blockquote>
+                            &laquo;Conjunto de acciones y actividades interrelacionadas realizadas para obtener un producto, 
+                            resultado o servicio predefinido.&raquo;
+                        </blockquote>
+                        <img class='nobor' style='height: 400px' src="img/esquema_proceso.svg" />
+                    </section>
+                </section>
+                <section>
+                    <section id="gpini00">
+                        <h3>Grupo de Procesos de Inicio</h3>
+                        <img class='nobor'  style='padding: 0px' src="img/grupo_procesos_inicio.svg" />
+                    </section>
+                    <section id="gpini01">
+                        <h4>4.1. Desarrollar el Acta de Constitución:</h4>
+                        <ul>
+                            <li>Formalmente autoriza un proyecto o una fase de proyecto</li>
+                            <li class='fragment'>El desarrollo del Acta de Constitución es parte del <strong>Área de Conocimiento de
+                            Integración</strong></li>
+                            <li class='fragment'>El Director de Proyectos debe ser identificado y asignado tan pronto como el
+                            Proyecto sea viable - <em>Preferentemente antes o mientras el Acta aún está en
+                            desarrollo</em></li>
+                            <li class='fragment'>Los Proyectos pueden ser Constituidos y Autorizados externamente a la
+                            Organización p.e.: agencias del gobierno, requerimientos legales,
+                            desarrollos tecnológicos, necesidades de negocio&hellip;</li>
+                        </ul>
+                    </section>
+                    <section id="gpini02">
+                        <h5>Contenidos del Acta de Constitución:</h5>
+                        <ul>
+                            <li>Propósito</li>
+                            <li>Actores principales</li>
+                            <li>Requisitos básicos y Objetivos</li>
+                            <li>Restricciones y Supuestos</li>
+                            <li>Riesgos</li>
+                            <li>Estructura de Desglose del Trabajo de Alto Nivel</li>
+                            <li>Estimaciones de Coste</li>
+                            <li>&hellip;</li>
+                        </ul>
+                        <p class='fragment'><strong>Autorización por escrito</strong></p>
+                    </section>
+                    <section id="gpini03">
+                        <h4>13.1. Identificar a los Interesados:</h4>
+                        <ul>
+                            <li>Crear un registro de personas y grupos con capacidad de impacto o afectados por el proyecto</li>
+                            <li class='fragment'>La identificación de los Interesados es parte del <strong>Área de Conocimiento de
+                            Gestión de los Interesados</strong></li>
+                            <li class='fragment'>Los Interesados del Proyecto son aquellos que están involucrados activamente
+                            en el mismo y aquellos cuyos intereses se van a ver afectados por los
+                            resultados, ejecución y finalización del mismo</li>
+                        </ul>
+                    </section>
+                    <section id="gpini04">
+                        <h5>13.1. Identificar a los Interesados:</h5>
+                        <ul>
+                            <li>El Director de Proyectos debe administrar la influencia de los mismos con
+                            respecto a los requisitos para asegurar el éxito del proyecto</li>
+                            <li class='fragment'>Los Interesados pueden tener una influencia positiva o negativa en el
+                            Proyecto</li>
+                            <li class='fragment'>Los Interesados con influencia negativa suelen ser subestimados por el equipo del
+                            proyecto por lo que aumenta el riesgo de que el Proyecto no acabe con éxito</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section id="gppla00">
+                        <h4>Grupo de Procesos de Planificación</h4>
+                        <img class='nobor'  style='padding: 0px' src="img/grupo_procesos_planificacion.svg" />
+                    </section>
+                    <section id="gppla01">
+                        <h4>Definición</h4>
+                        <blockquote>
+                            &laquo;La Planificación, en el contexto de la Gestión de Proyectos, implica la
+                        documentación de las acciones necesarias para definir, preparar, integrar y
+                        coordinar todos los planes subsidiarios en un Plan de Gestión de Proyecto.&raquo;
+                        </blockquote>
+                        <p class='fragment'> Se pueden tener que elaborar hasta <strong>14</strong> planes subsidiarios </p>
+                        <aside class='notes'>
+                            <p>Planes de Gestión subsidiarios:</p>
+                            <ol>
+                                <li>Integración: PGP</li>
+                                <li>Integración: Control de Cambios</li>
+                                <li>Integración: Gestión de Configuración</li>
+                                <li>Alcance</li>
+                                <li>Alcance: Requisitos</li>
+                                <li>Tiempo</li>
+                                <li>Coste</li>
+                                <li>Calidad</li>
+                                <li>Calidad: Mejoras</li>
+                                <li>Recursos Humanos</li>
+                                <li>Comunicaciones</li>
+                                <li>Riesgos</li>
+                                <li>Adquisiciones</li>
+                                <li>Interesados</li>
+                            </ol>
+                        </aside>
+                    </section>
+                    <section id="gpplaint">
+                        <h4>Gestión de la Integración del Proyecto</h4>
+                        <ul>
+                        <li class='nobu'>Desarrollar el <strong>Plan de Gestión del Proyecto [4.2.]</strong></li>
+                            <ul>
+                                <li>Documento detallado y bien estructurado que define el estilo
+                                del Proyecto en sí mismo</li>
+                                <li>Asegura la Integración a lo largo del proyecto</li>
+                                <li>Controla el cambio de manera efectiva</li>
+                                <li>Puede actualizarse en actividades de planificación iterativas</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplaalc00">
+                        <h4>Gestión del Alcance del Proyecto:</h4>
+                        <ul>
+                            <li class='nobu'>Durante la planificación, el <strong>Alcance</strong> se define y describe de manera
+                            minuciosa ya que se tiene más información sobre el propio Proyecto</li>
+                            <ul class='fragment'>
+                                <li><strong>Planificar la Gestión del Alcance [5.1.]</strong></li>
+                                <li><strong>Recolección de Requisitos [5.2.]</strong></li>
+                                <li><strong>Definición del Alcance [5.3.]</strong></li>
+                                <li><strong>Creación de la Estructura de Desglose del Trabajo (EDT) [5.4.]</strong></li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplaalc03">
+                        <h5>Recolección de Requisitos [5.2.]</h5>
+                        <ul>
+                            <li>Identificación</li>
+                            <li>Descripción</li>
+                            <li>Necesidades / oportunidades / metas</li>
+                            <li><strong>Objetivos</strong></li>
+                            <li>Entregables</li>
+                            <li>Fecha de fin</li>
+                        </ul>
+                        <aside class='notes'>
+                           <p> Diferenciar Alcance - Objetivos - Requisitos </p>
+                           <p> Objetivos: </p>
+                            <ul>
+                                <li><strong>S</strong>imple</li>
+                                <li><strong>M</strong>easurable</li>
+                                <li><strong>A</strong>ttainable</li>
+                                <li><strong>R</strong>ealistic</li>
+                                <li><strong>T</strong>imely</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section id="gpplaalc01">
+                        <h5>EDT:</h5>
+                        <ul>
+                            <li>Identificar Entregables y Trabajo necesario para obtenerlos</li>
+                            <li class='fragment'>Descomponer niveles superiores en componentes de menor nivel</li>
+                            <li class='fragment'>Verificar descomposición es necesaria y suficiente</li>
+                            <li class='fragment'>Debe ser compartida con los Interesados</li>
+                        </ul>
+                    </section>
+                    <section id="gpplaalc01b">
+                        <h5>EDT:</h5>
+                        <img class='nobor' src="img/ejem_edt.svg" />
+                        <aside class='notes'>
+                            <ul>
+                                <li>Los componentes del Proyecto pueden ser productos o servicios</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section id="gpplaalc02">
+                        <h4>Resultados de la planificación del Alcance </h4>
+                        <ul>
+                            <li>Plan de gestión del alcance</li>
+                            <li>Plan de gestión de requisitos</li>
+                            <li>Documentación de requisitos</li>
+                            <li>Línea Base del Alcance</li>
+                            <ul>
+                                <li>Enunciado del Alcance</li>
+                                <li>EDT</li>
+                                <li>Diccionario de la EDT</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplatiem00">
+                        <h4>Gestión del Tiempo del Proyecto</h4>
+                        <ul>
+                            <li><strong>Planificar la Gestión del Tiempo [6.1.]</strong></li>
+                            <li><strong>Definir las actividades [6.2.]</strong></li>
+                            <li><strong>Secuenciar las actividades [6.3.]</strong></li>
+                            <li><strong>Estimar los recursos de las actividades [6.4.]</strong></li>
+                            <li><strong>Estimar la duración de las actividades [6.5.]</strong></li>
+                            <li><strong>Desarrollar el Cronograma [6.6.]</strong></li>
+                        </ul>
+                    </section>
+                    <section id="gpplatiem01">
+                        <h5>Secuenciar las actividades [6.3.]</h5>
+                        <ul>
+                            <li>De final a principio</li>
+                            <li>De final a final</li>
+                            <li>De principio a principio </li>
+                            <li>De principio a final</li>
+                        </ul>
+                        <aside class='notes'>
+                            <ul>
+                                <li>De final a principio (acabar la predecesora y comenzar la sucesora)</li>
+                                <li>De final a final (la sucesora y la predecesora acaban simultáneamente)</li>
+                                <li>De principio a principio (la sucesora y la predecesora comienzan
+                                simultáneamente)</li>
+                                <li>De principio a final (caso muy complejo donde la sucesora acaba cuando se
+                                inicia la predecesora)</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section id="gpplatiem02">
+                        <h5>Desarrollar el Cronograma [6.6.]</h5>
+                        <img class='nobor' src="img/pla_pro_gr_ex.svg" />
+                        <p><u>Actividades divergentes</u>: única predecesora con múltiples sucesoras</p>
+                        <p><u>Actividades convergentes</u>: múltiples predecesoras con una única sucesora</p>
+                    </section>
+                    <section id="gpplatiem04">
+                        <h4>Resultados de la planificación del Tiempo </h4>
+                        <ul>
+                            <li>Plan de gestión del Cronograma</li>
+                            <li>Línea Base del tiempo</li>
+                            <li>Datos del Cronograma</li>
+                        </ul>
+                    </section>
+                    <section id="gpplacost00">
+                        <h4>Gestión del Coste del Proyecto</h4>
+                        <ul>
+                            <li><strong>Planificar la Gestión de Costes [7.1.]</strong></li>
+                            <li><strong>Estimar Costes [7.2.]</strong></li>
+                            <ul>
+                                <li>Variables</li>
+                                <li>Fijos</li>
+                                <li>Directos</li>
+                                <li>Indirectos</li>
+                            </ul>
+                            <li><strong>Determinar el Presupuesto [7.3.]</strong></li>
+                        </ul>
+                    </section>
+                    <section id='gpplacost02'>
+                        <h5>Esquema del presupuesto</h5>
+                        <img class='nobor' src="img/esquema_presupuesto.svg" />
+                         <aside class='notes'>
+                             <ul>
+                                 <li>Coste Actividades: Incluye Coste de la Calidad</li>
+                                 <li>Coste Riesgo: Incluye Coste de las Estrategias</li>
+                                 <li>Costes Indirectos: Incluye los Gastos Generales</li>
+                                 <li>Reserva Contingencia: Unknown - Known Risk</li>
+                                 <li>Reserva Gestión: Unknown - Unknown Risk</li>
+                             </ul>
+                         </aside>
+                    </section>
+                    <section id="gpplacost04">
+                        <h4>Resultados de la Planificación de Costes</h4>
+                        <ul>
+                            <li>Plan de gestión del coste</li>
+                            <li>Línea Base del coste</li>
+                            <li>Requisitos de financiación del Proyecto</li>
+                        </ul>
+                    </section>
+                    <section id="gpplacali00">
+                        <h4>Gestión de la Calidad del Proyecto</h4>
+                        <ul>
+                            <li class='nobu'><strong>Planificar la Gestión de la Calidad [8.1.]</strong>:</li>
+                            <ul>
+                                <li>La Calidad es:
+                                <ul>
+                                    <li>Completar un Requisito</li>
+                                    <li>Satisfacer al Cliente</li>
+                                </ul>
+                                <li class='fragment'>Evitar el &laquo;Chapado en Oro&raquo; </li>
+                                <li class='fragment'>Grado (Funcionalidad) y Calidad no son lo mismo</li>
+                                </li>
+                                <li class='fragment'>Pueden haber distintos niveles de Calidad</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplacali02">
+                        <h4>Resultados de la Planificación de Calidad</h4>
+                        <ul>
+                            <li>Plan de gestión de la calidad</li>
+                            <li>Plan de mejora de procesos</li>
+                            <li>Métricas de calidad</li>
+                            <li>Listas de chequeo de la calidad</li>
+                        </ul>
+                    </section>
+                    <section id="gpplarrhh00">
+                        <h4>Gestión de Recursos Humanos del Proyecto</h4>
+                        <ul>
+                            <li class='nobu'><strong>Planificar la Gestión de Recursos Humanos [9.1.]</strong>:</li>
+                            <ul>
+                                <li>Identificar perfiles, roles, responsabilidades, competencias, etc</li>
+                                <li class='fragment'>Identificar las restricciones del Proyecto:
+                                <ul>
+                                  <li>Estructura de la organización</li>
+                                  <li>Acuerdos de negociación colectiva</li> 
+                                  <li>Contratación de personal</li>
+                                  <li>Normativa vigente</li>
+                                </ul>
+                                </li>
+                                <li class='fragment'>Identificar necesidades de formación, recompensas, etc</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplarrhh01">
+                        <h4>Resultados de la planificación de Recursos Humanos</h4>
+                        <ul>
+                            <li class='nobu'>Plan de gestión de recurso humanos</li>
+                            <ul>
+                                <li>Roles y Responsabilidades</li>
+                                <li>Organigramas del Proyecto</li>
+                                <li>Plan de gestión del personal</li>
+                                <li>Matrices de Asignación de Responsabilidades (RAM)</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplacomu00">
+                        <h4>Gestión de las Comunicaciones del Proyecto</h4>
+                        <ul>
+                            <li class='nobu'><strong>Planificar la Gestión de las Comunicaciones [10.1.]</strong></li>
+                            <ul>
+                                <li>El Gestor de Proyectos debe gastar gran parte de su tiempo comunicándose</li>
+                                <li class='fragment'>Hay que entender <strong>qué</strong> debe ser comunicado, a <strong>quién</strong> y con qué <strong>frecuencia</strong></li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplacomu01">
+                        <h5>El Plan de Comunicación depende de:</h5>
+                        <ul>
+                            <li>Requisitos de información de los interesados</li>
+                            <ul>
+                                <li>Listado de emisores / listado de receptores</li>
+                            </ul>
+                            <li class='fragment'>Tecnologías de comunicación</li>
+                            <li class='fragment'>Modelo de comunicación
+                            <ul>
+                                <li>Emisor / Receptor / Mensaje / Ruido</li>
+                                <li>Pautas de comunicación</li>
+                            </ul></li>
+                            <li class='fragment'>Método de comunicación
+                            <ul>
+                                <li><em>Push</em> / <em>Pull</em> / Interactivo</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="gpplacomu02">
+                        <h4>Resultados de la planificación de las Comunicaciones</h4>
+                        <ul>
+                            <li>Plan de gestión de las comunicaciones</li>
+                            <ul>
+                                <li>Requisitos de información</li>
+                                <li>Paquetes de información y frecuencia</li>
+                                <li>Recursos, métodos y canales</li>
+                                <li>Diagramas de flujo de información</li>
+                                <li>Matriz de distribución de información</li>
+                                <li>Restricciones de comunicación</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplaries00">
+                        <h4>Gestión de los Riesgos</h4>
+                        <ul>
+                            <li><strong>Planificar la gestión de Riesgos [11.1.]</strong></li>
+                            <li><strong>Identificar los Riesgos [11.2.]</strong></li>
+                            <li><strong>Realizar el Análisis Cualitativo de los Riesgos [11.3.]</strong></li>
+                            <li><strong>Realizar el Análisis Cuantitativo de los Riesgos [11.4.]</strong></li>
+                            <li><strong>Planificar la respuesta a los Riesgos [11.5.]</strong></li>
+                        </ul>
+                    </section>
+                    <section id="gpplaries01">
+                        <h5>Planificar la gestión de Riesgos [11.1.]</h5>
+                        <ul>
+                            <li class='nobu'>Se emplean</li>
+                            <ul>
+                                <li>Enunciado del alcance</li>
+                                <li>Planes de Costes / Tiempo y Comunicaciones</li>
+                                <li>Registro de interesados</li>
+                            </ul>
+                            <li class='fragment nobu'>Se genera el <strong>Plan de Gestión de Riesgos</strong>
+                            <ul>
+                                <li>Metodología a emplear y acciones</li>
+                                <li>Roles y responsabilidades</li>
+                                <li>Presupuestos y reservas</li>
+                                <li>Mediciones y tolerancias</li>
+                            </ul></li>
+                        </ul>
+                        <p class='fragment'><strong>Todos</strong> los miembros de un Proyecto deberían colaborar en la identificación de
+                        Riesgos</p>
+                    </section>
+                    <section id="gpplaries02">
+                        <h5>Identificar los Riesgos [11.2.]:</h5>
+                            <p> El resultado es el <strong>Registro de Riesgos</strong> </p>
+                            <ul>
+                                <li>Herramientas para la identificación de Riesgos:</li>
+                                <ul>
+                                    <li>Lluvia de ideas</li>
+                                    <li>Técnica Delphi </li>
+                                    <li>Entrevistas</li>
+                                    <li>Análisis DAFO</li>
+                                </ul>
+                            </ul>
+                        <aside class='notes'>
+                            <p>(los participantes están dispersos y no tiene líder, por lo
+                            que se reduce el sesgo)</p>
+                        </aside>
+                    </section>
+                    <section id="gpplaries03">
+                        <h5>Registro de Riesgos</h5>
+                        <ul>
+                            <li>Lista de riesgos identificados</li>
+                            <li>Causas comunes de riesgos</li>
+                            <li>Disparadores de riesgos</li>
+                            <li>Lista de posibles respuestas</li>
+                        </ul>
+                    </section>
+                    <section id="gpplaries04">
+                        <h5>Realizar el Análisis Cualitativo de los Riesgos [11.3.]</h5>
+                        <ul>
+                            <li>Establecer Prioridades entre Objetivos</li>
+                            <li class='fragment'>¡Los Riesgos positivos son Oportunidades!</li>
+                            <li class='fragment'>Calcular Probabilidad e Impacto: Severidad</li>
+                        </ul>
+                        <aside class='notes'>
+                            (p.e. usando clasificación de
+                            semáforo - rojo, amarillo, verde)</li>
+                        </aside>
+                    </section>
+                    <section id="gpplaries05">
+                        <img class='nobor' height='600px' src="img/matriz_prb_imp.svg" />
+                    </section>
+                    <section id="gpplaries06">
+                        <h5>Realizar el Análisis Cuantitativo de los Riesgos</h5>
+                        <p>El Análisis Cuantitativo se realiza <strong>SOLO</strong> en los Riesgos que se hayan
+                        priorizado en el Análisis Cuantitativo por potencialmente ser de impacto
+                        para el Proyecto</p>
+                        <ul class='fragment'>
+                            <li>Las herramientas pueden ser:</li>
+                            <ul>
+                                <li>Análisis de Sensibilidad</li>
+                                <li>Modelos y simulaciones (Monte Carlo)</li>
+                                <li>Evaluación del Valor Monetario Esperado</li>
+                                <li>Árboles de decisión</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplaries08">
+                        <h5>Planificar la respuesta a los Riesgos [11.5.]</h5>
+                        <ul>
+                            <li class='nobu'>Estrategias de respuesta al riesgo:
+                            <ul>
+                                <li>Eliminar</li>
+                                <li>Mitigar</li>
+                                <li>Transferir</li>
+                                <li>Aceptar</li>
+                            </ul></li>
+                            <li class='fragment nobu'>Estrategias de respuesta a las oportunidades:
+                            <ul>
+                                <li>Aceptar</li>
+                                <li>Explotar</li>
+                                <li>Mejorar</li>
+                                <li>Compartir</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="gpplaries07">
+                        <h4>Resultados de la planificación de los Riesgos </h4>
+                        <ul>
+                            <li>Plan de gestión de Riesgos</li>
+                            <li>Registro de riesgos</li>
+                        </ul>
+                    </section>
+                    <section id="gpplaadqu00">
+                        <h4>Gestión de las Adquisiciones del Proyecto</h4>
+                        <ul>
+                            <li class='nobu'><strong>Planificar las Adquisiciones [12.1.]</strong></li>
+                            <ul>
+                                <li>La decisión es si hay que <strong>&laquo;hacer o comprar&raquo;</strong>
+                                    <ul>
+                                        <li>Se alcanza por juicio de expertos, investigaciones de mercado, reuniones&hellip;</li>
+                                    </ul>
+                                </li>
+                                <li class='fragment'>Revisar el riesgo inherente a cada decisión</li>
+                                <li class='fragment'>Revisar cada tipo de contrato para mitigar riesgos</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplaadqu01">
+                        <h4>Resultados de la planificación de las Adquisiciones</h4>
+                        <ul>
+                            <li>Plan de gestión de las adquisiciones</li>
+                            <li>Enunciado de las adquisiciones</li>
+                            <ul>
+                                <li>Descripción del producto</li>
+                                <li>Parámetros de entrega</li>
+                            </ul>
+                            <li>Documentos de las adquisiciones</li>
+                            <li>Criterios de selección</li>
+                        </ul>
+                    </section>
+                    <section id="gpplainter00">
+                        <h4>Gestión de los Interesados</h4>
+                        <ul>
+                            <li class='nobu'><strong>Planificar la Gestión de los Interesados [13.2.]</strong></li>
+                            <ul>
+                                <li>Identificar niveles de compromiso y participación</li>
+                                <li class='fragment'>Interrelaciones y conflictos</li>
+                                <li class='fragment'>Requisitos de comunicación</li>
+                                <li class='fragment'>Información a distribuir a cada interesado</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpplainter01">
+                        <h4>Resultado de la planificación de la gestión de los Interesados</h4>
+                        <ul>
+                            <li>Plan de gestión de los interesados</li>
+                        </ul>
+                    </section>
+                    <section id="gppla02">
+                        <h3>Grupo de Procesos de Planificación</h3>
+                        <p>Un último consejo:</p>
+                        <blockquote class='fragment'>
+                            &laquo;No hay ningún sustituto a la documentación</br>
+                            <strong>Siempre</strong> hay que documentar.&raquo;
+                        </blockquote>
+                    </section>
+                </section>
+                <section>
+                    <section id="gpesc">
+                        <h4>Grupo de Procesos de Ejecución</h4>
+                        <img class='nobor' style='padding: 0px' height='600px' src="img/grupo_procesos_ejecucion.svg" />
+                    </section>
+                    <section id="gpeje00">
+                        <h4>Grupos de Procesos de Ejecución:</h4>
+                        <blockquote>
+                            &laquo;El Grupo de Procesos de Ejecución consiste en los Procesos que se realizan
+                        para completar el trabajo definido en el Plan de Gestión del Proyecto para
+                        satisfacer las especificaciones del Proyecto.&raquo;
+                        </blockquote>
+                    </section>
+                    <section id="gpeje01">
+                        <h4>Antes de ponerse a ejecutar</h4>
+                        <ul>
+                            <li>Estructura de Desglose del Trabajo</li>
+                            <li>Línea Base del Tiempo</li>
+                            <li>Línea Base del Coste</li>
+                            <li>Plan de Gestión de la Calidad</li>
+                            <li>Plan de Gestión de Recursos Humanos</li>
+                            <li>Plan de Gestión de Comunicaciones</li>
+                            <li>Riesgos Identificados</li>
+                            <li>Plan de Gestión de Adquisiciones</li>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh00">
+                        <h4>Recursos Humanos</h4>
+                        <h5>Entradas</h5>
+                        <ul>
+                            <li class='nobu'>Plan de gestión de recurso humanos</li>
+                            <ul>
+                                <li>Roles y Responsabilidades</li>
+                                <li>Organigramas del Proyecto</li>
+                                <li>Plan de gestión del personal</li>
+                                <li>Matrices RAM</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh01">
+                        <h5>Matriz RASCI</h5>
+                        <img class='nobor' style='height: 350px' src="img/rasci.jpg" />
+                        <div >
+                            <table class='center' border="0">
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Responsible [Agente]</li>
+                                            <li>Accountable [Responsable]</li>
+                                            <li>Support [Apoya]</li>
+                                        </ul>
+                                    </td>
+                                    <td style="vertical-align:top">
+                                         <ul>
+                                             <li>Consult [Debe consultársele]</li>
+                                             <li>Inform [Debe informársele]</li>
+                                         </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style='width: 100%; text-align: center' colspan='2'>
+                                        <p class='fragment'><strong> Debe ser compartida con los Interesados </strong></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="gpejerrhh02">
+                        <h4>Adquiriendo el equipo [9.2.]</h4>
+                        <ul>
+                            <li class='nobu'>Recursos:</li>
+                            <ul>
+                                <li>Asignaciones previas
+                                <ul>
+                                    <li>Relaciones previas con el proyecto</li>
+                                </ul></li>
+                                <li class='fragment'>Negociación
+                                <ul>
+                                    <li>Con otras organizaciones, equipos, etc</li>
+                                </ul></li>
+                                <li class='fragment'>Adquisición
+                                <ul>
+                                    <li>Contrataciones o subcontrataciones</li>
+                                </ul></li>
+                                <li class='fragment'>Equipos virtuales
+                                <ul>
+                                    <li>A través de comunicaciones digitales</li>
+                                    <li><strong>Requiere gran planificación de comunicaciones</strong></li>
+                                </ul></li>
+                                <li class='fragment'>Análisis multicriterio
+                                <ul>
+                                    <li>Permite tomar decisiones de forma más adecuada</li>
+                                </ul></li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh03">
+                        <h5>Adquiriendo el equipo</h5>
+                        <ul>
+                            <li class='nobu'>Los equipos pueden no resultar como se planifican:</li>
+                            <ul>
+                                <li>Afectan los Riesgos, el Cronograma, el Coste, las Comunicaciones, todo se
+                                debe tener en cuenta</li>
+                                <li class='fragment'>Además también hay que tener en cuenta otras opciones: legales,
+                                regulaciones, obligaciones que deben vigilarse</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh04">
+                        <h4>Desarrollando el equipo [9.3.]</h4>
+                        <ul>
+                            <li class='nobu'>Objetivos del Desarrollo del Equipo:</li>
+                            <ul>
+                                <li>Alinear esfuerzos</li>
+                                <li class='fragment'>Facilitar el trabajo a los demás</li>
+                                <li class='fragment'><a href="http://www.amazon.es/dp/8423423115">Efecto Medici</a></li>
+                                <li class='fragment'>Conseguir lealtad al proyecto</li>
+                                <li class='fragment'>Generar y aumentar confianza</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh05">
+                        <h5>Desarrollando el equipo</h5>
+                        <ul>
+                            <li class='nobu'>Recursos: </li>
+                            <ul>
+                                <li>Habilidades interpersonales</li>
+                                <li class='fragment'>Formación</li>
+                                <li class='fragment'>Team Building</li>
+                                <li class='fragment'>Reglas básicas</li>
+                                <li class='fragment'>Re ubicación</li>
+                                <li class='fragment'>Reconocimientos y recompensas</li>
+                                <li class='fragment'>Valoración del personal</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh06">
+                        <h5>Desarrollando el equipo</h5>
+                        <p>Liderazgo situacional</p>
+                        <img class='nobor' src="img/liderazgo_sit.svg" />
+                        <aside class='notes'>
+                            <p>Directing – provide specific instructions and closely supervise performance </p>
+                            <p>Coaching – Share ideas and facilitate decision making </p>
+                            <p>Delegating – Turns over responsibility for decisions and implementation.  </p>
+                            <p>Supporting – explains decisions and provide opportunity for clarification </p>
+                        </aside>
+                    </section>
+                    <section id="gpejerrhh07">
+                        <h4>Dirigir el Equipo del Proyecto [9.4.]</h4>
+                        <ul>
+                            <li class='nobu'>Recursos: </li>
+                            <ul>
+                                <li>Observación y Conversación</li>
+                                <li class='fragment'>Evaluaciones de rendimiento</li>
+                                <li class='fragment'>Habilidades interpersonales</li>
+                                <li class='fragment'>Gestión de conflictos</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh08">
+                        <h5>Dirigir el Equipo del Proyecto</h5>
+                        <ul>
+                            <li class='nobu'>Gestión de conflictos:</li>
+                            <ul>
+                                <li>Inevitables entre personas</li>
+                                <li>Pueden ser beneficiosos</li>
+                                <li>Resultado del Cambio</li>
+                                <li>Pueden y deben manejarse</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejerrhh09">
+                        <h5>Gestión de conflictos</h5>
+                        <img class='nobor' src="img/resolucion_conf.svg" />
+                        <p class='nano'> Thomas Kilman </p>
+                    </section>
+                    <section id="gpejerrhh10">
+                        <h5>¡Cuidado con el efecto Halo!</h5>
+                        <p>Se produce cuando la calidad de una persona influencia una decisión</p>
+                        <div id="ejemplo" class='fragment'>
+                            <p>Por ejemplo: <p>
+                            <p>El señor A es una persona con grandes capacidades tecnológicas,
+                            por lo que será un buen gestor de proyectos tecnológicos</p>
+                        </div>
+                        <p class='fragment'> Solo con estos datos no podríamos afirmar que las habilidades 
+                        tecnológicas del señor A le vayan a convertir automáticamente en un buen 
+                        Gestor de Proyectos</p>
+                        <p class='fragment'><strong>¡No hay que dejarse cegar por el Halo!</strong></p>
+                    </section>
+                    <section id="gpejecomu00">
+                        <h4>Comunicaciones</h4>
+                        <h5>Entradas</h5>
+                        <div  style='width:70%; margin-left:auto; margin-right:auto;' id="COMENT">
+                            <ul>
+                                <li>Registro de Interesados</li>
+                                <li>Plan de Gestión de Interesados</li>
+                                <li>Requisitos de Comunicación</li>
+                                <ul>
+                                    <li>Información, formato, lenguaje, frecuencia, niveles</li>
+                                </ul>
+                                <li>Miembros del equipo 
+                                <ul>
+                                    <li>Generar / comunicar información</li>
+                                </ul></li>
+                                <li>Tecnología</li>
+                                <li>Escalado de información</li>
+                                <li>Calendario de reuniones</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="gpejecomu01">
+                        <h4>Gestión de las Comunicaciones del Proyecto [10.2.]</h4>
+                        <ul>
+                            <li class='nobu'>Sistema de Gestión de la Información</li>
+                            <ul>
+                                <li>Gestión de documentos impresos</li>
+                                <ul>
+                                    <li>Cartas, notas, actas, informes, prensa</li>
+                                </ul>
+                                <li class='fragment'>Gestión de comunicaciones electrónicas
+                                <ul>
+                                    <li>Correo, webs, actas, informes</li>
+                                </ul></li>
+                                <li class='fragment'>Herramientas electrónicas de gestión
+                                <ul>
+                                    <li>Oficinas virtuales, videoconferencias, sistemas de trabajo colaborativo, gestión de proyectos</li>
+                                </ul></li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejecomu02">
+                        <h5>Mejorar la eficiencia de las reuniones</h5>
+                        <blockquote>
+                            &laquo;He convocado esta reunión y no será una reunión hasta que alguien no desperdicie tiempo.&raquo;
+                        </blockquote>
+                        <p class='nano'>
+                            The Boss - <a href="http://dilbert.com">Dilbert</a>
+                        </p>
+                    </section>
+                    <section id="gpejecomu03">
+                        <h5>Mejorar la eficiencia de las reuniones</h5>
+                        <ul>
+                            <li>Convocatoria formal y con suficiente antelación</li>
+                            <li class='fragment'>Propósito y tiempo <strong>limitado</strong></li>
+                            <li class='fragment'>Orden del día y Agenda para cada punto</li>
+                            <li class='fragment'>Reuniones regulares</li>
+                            <li class='fragment'>Elección de personas adecuadas
+                            <ul>
+                                <li>Informar del papel y la responsabilidad</li>
+                            </ul></li>
+                            <li class='fragment'>Moderador y reglas de Comportamiento</li>
+                            <li class='fragment'>Secretario que redacta el acta
+                            <ul>
+                                <li>Título, fecha y asistentes</li>
+                                <li>Acuerdos adoptados</li>
+                                <li>Compromisos con fecha y responsable</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="gpejecomin00">
+                        <h4>Interesados</h4>
+                        <h5>Entradas</h5>
+                        <ul>
+                            <li>Plan de gestión de los Interesados</li>
+                            <li>Plan de gestión de las Comunicaciones</li>
+                        </ul>
+                    </section>
+                    <section id="gpejecomin01">
+                        <h4>Gestionar el Compromiso de los Interesados [13.3.]</h4>
+                        <ul>
+                            <li>Gestionar de manera activa las expectativas, influenciar los deseos para que
+                            se alineen con los objetivos del proyecto</li>
+                            <li class='fragment'>Tratar los puntos que no se conviertan en Incidencias</li>
+                            <li class='fragment'>Clarificar y resolver Incidencias
+                            <ul>
+                                <li>Registro de <strong>Asuntos Pendientes</strong></li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="gpejecali00">
+                        <h4>Calidad</h4>
+                        <h5>Entradas</h5>
+                        <ul>
+                            <li>Plan de Gestión de la Calidad</li>
+                            <li>Métricas de Calidad</li>
+                            <li>Mediciones de control de Calidad</li>
+                        </ul>
+                    </section>
+                    <section id="gpejecali01">
+                        <h4>Aseguramiento de la Calidad [8.2.]</h4>
+                        <ul>
+                            <li class='nobu'>Las <strong>Auditorías de Calidad</strong> son revisiones estructuradas con objetivos tales
+                            como:</li>
+                            <ul>
+                                <li>Identificar las mejores prácticas</li>
+                                <li class='fragment'>Identificar carencias</li>
+                                <li class='fragment'>Obtener mejores prácticas de proyectos similares conocidos</li>
+                                <li class='fragment'>Ofrecer ayuda a la mejora</li>
+                                <li class='fragment'>Asegurarse de que la auditoría contribuye constructivamente
+                                <ul>
+                                    <li><strong>Lecciones aprendidas</strong></li>
+                                </ul></li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpejeadqu00">
+                        <h4>Adquisiciones</h4>
+                        <h5>Entradas</h5>
+                        <ul>
+                            <li>Documentos de las Adquisiciones</li>
+                            <li>Criterios de selección de proveedores</li>
+                            <li>Lista de proveedores cualificados</li>
+                            <li>Acuerdos</li>
+                        </ul>
+                    </section>
+                    <section id="gpejeadqu01">
+                        <h4>Efectuar las adquisiciones [12.2.]</h4>
+                        <ul>
+                            <li>Hacer las solicitudes de información a los proveedores cualificados</li>
+                            <li class='fragment'>Evaluar las respuestas</li>
+                            <li class='fragment'>Referirse a las estimaciones de expertos</li>
+                            <li class='fragment'>Negociar</li>
+                            <li class='fragment'>Concesión del contrato</li>
+                        </ul>
+                    </section>
+                    <section id="conclusion">
+                        <h4>Conclusión</h4>
+                        <ul>
+                            <li>Este Grupo de Procesos implica coordinar gente y recursos, así como integrar y llevar
+                            a cabo las actividades descritas en el Plan de Gestión del Proyecto</li>
+                            <li class='fragment'>Los resultados pueden requerir realizar nuevas planificaciones y crear
+                            nuevas Líneas Base</li>
+                            <li class='fragment'>Gran parte del Presupuesto del Proyecto se emplea en esta fase</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section id="gpsco00">
+                        <h4>Grupo de Procesos de Seguimiento y Control</h4>
+                        <img class='nobor' style='padding: 0px' height='600px' src="img/grupo_procesos_segycon.svg" />
+                    </section>
+                    <section id="gpsco01">
+                        <h5>Grupo de Procesos de Seguimiento y Control</h5>
+                        <ul>
+                            <li>Qué</li>
+                            <ul>
+                                <li>Revisar y analizar el Rendimiento del Proyecto</li>
+                                <li>Informar del Rendimiento del Proyecto</li>
+                            </ul>
+                            <li class='fragment'>Por qué
+                            <ul>
+                                <li>Informar del Rendimiento del Proyecto</li>
+                                <li>Controlar la Triple Restricción</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id='tripleres'>
+                        <h5>Triple Restricción</h5>
+                        <img class='nobor' height='550px' src="img/triple_rest.svg" />
+                    </section>
+                    <section id='quinres'>
+                        <h5>¿Quíntuple Restricción?</h5>
+                        <img class='nobor' height='550px' src="img/quintuple_rest.svg" />
+                    </section>
+                    <section id="gpsco02">
+                        <h5>Revisar y analizar el Rendimiento del Proyecto</h5>
+                        <ul>
+                            <li class='nobu'>Informes creados por los Miembros del Equipo al Gestor de Proyecto</li>
+                            <ul>
+                                <li>Análisis de Variación</li>
+                                <li>Auditoría de Riesgos</li>
+                                <li>Estado de Valor Ganado</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpsco03">
+                        <h6>Análisis de la Variación</h6>
+                        <ul>
+                            <li class='nobu'>Informes</li>
+                            <ul>
+                                <li>Informe de variación del Cronograma</li>
+                                <li>Informe de variación del Coste</li>
+                                <li>Informe de variación de la Calidad</li>
+                            </ul>
+                            <li class='fragment'>Elementos comunes a los 3 informes
+                            <ul>
+                                <li>Resultados planificados</li>
+                                <li>Resultados reales</li>
+                                <li>Variación</li>
+                                <li>Causas Raíz</li>
+                                <li>Respuestas planificadas</li>
+                            </ul></li>
+                        </ul>
+                        <aside class='notes'>
+                            <p>
+                                Plantilla de Informe de Análisis de la Variación
+                            </p>
+                        </aside>
+                    </section>
+                    <section id="gpsco04">
+                        <h6>Auditoría de Riesgos</h6>
+                        <ul>
+                            <li>Auditoría de Eventos de riesgo</li>
+                            <li>Auditoría de Respuesta a Riesgos</li>
+                            <li>Proceso de Gestión de Riesgos</li>
+                        </ul>
+                        <aside class='notes'>
+                            <p>Plantilla para el informe de Auditoría de Riesgos</p>
+                        </aside>
+                    </section>
+                    <section id="gpsco04evm00">
+                        <h6>Estado del Valor Ganado</h6>
+                        <ul>
+                            <li>Todo se interpreta como un coste (<strong>&euro;</strong>)</li>
+                            <ul>
+                                <li>En caso de duda, el tiempo es dinero</li>
+                            </ul>
+                            <li>Hay que interpretar tres líneas:</li>
+                            <ul>
+                                <li>Lo planificado (<strong>PV</strong>)</li>
+                                <li>Lo que ha costado hacerlo (<strong>AC</strong>)</li>
+                                <li>El valor de lo hecho (<strong>EV</strong>)</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section id="gpsco04evm01">
+                        <h6>Estado del Valor Ganado</h6>
+                        <img class='nobor' src="img/evm.svg" />
+                        <aside class='notes'>
+                            <img src="img/evm_cheatsheet.png" />
+                        </aside>
+                    </section>
+                    <section id="gpsco05">
+                        <h5>Informar de Rendimiento del Proyecto</h5>
+                        <ul>
+                            <li>El informe se envía al Gestor del Proyecto o al esponsor</li>
+                            <ul>
+                                <li>Los datos se obtienen de los informes de estado del Equipo del Proyecto.</li>
+                                <li>Solo debe aparecer información de alto nivel</li>
+                            </ul>
+                            <li class='fragment'>El informe contendrá
+                            <ul>
+                                <li>Lista de objetivos alcanzados a fecha del informe</li>
+                                <li>Lista de objetivos planificados y no alcanzados a fecha del informe</li>
+                                <li>Causa raíz de las variaciones</li>
+                                <li>Impacto de las variaciones</li>
+                                <li>Acciones preventivas y correctivas planificadas</li>
+                            </ul></li>
+                        </ul>
+                        <aside class='notes'>
+                            <p>Plantilla para el informe de Rendimiento del Proyecto</p>
+                        </aside>
+                    </section>
+                    <section id="gpsccam01">
+                        <h4>Realizar el Control Integrado de Cambios [4.5.]</h4>
+                        <p> ¿Os acordáis de esta imagen?  </p>
+                        <img class='nobor' src="img/rel_grup_proc.svg" />
+                    </section>
+                    <section id="gpsccam02">
+                        <h5>¿Cómo cambiar lo que no está saliendo bien?</h5>
+                        <img class='nobor' height='550px' src="img/control_cambios.svg" />
+                    </section>
+                    <section id="gpsccam03">
+                        <h5>¿Quién aprueba los cambios?</h5>
+                        <p> Depende del Proyecto pero &hellip; </p>
+                        <img class='nobor' height='500px' src="img/quien_cambia.svg" />
+                    </section>
+                </section>
+                <section>
+                    <section id="gpcie00">
+                        <h4>Grupo de Procesos de Cierre</h4>
+                        <img class='nobor' style='padding: 0px' src="img/grupo_procesos_cierre.svg" />
+                    </section>
+                    <section id="gpcie01">
+                        <h4>Cierre</h4>
+                        <blockquote>
+                            &laquo;Por definición los proyectos tiene un inicio definido y un final definido.&raquo;
+                        </blockquote>
+                        <ul>
+                            <li class='fragment nobu'>El proceso de Cierre lleva al Proyecto o la Fase a un final ordenado, de
+                                forma operacional y financiera</li>
+                            <li class='fragment nobu'>Los Procesos de Cierre deben activarse cuando:
+                            <ul>
+                                <li>El Proyecto se completa</li>
+                                <li>Una Fase del Proyecto se completa</li>
+                                <li>El Proyecto se termina o se cancela</li>
+                            </ul></li>
+                        </ul>
+                        <aside class='notes'>
+                        <ul>
+                            <li>El Proyecto se completa - en la fase final del proyecto, todos los
+                            proyectos deben tener un cierre formal al completarse</li>
+                            <li>Una Fase del Proyecto se completa - en función del tipo de proyecto
+                            algunas Fases deben cerrarse de manera formal o algunas actividades
+                            específicas de la Fase pueden darse por terminadas al final de la Fase</li>
+                            <li>El Proyecto se termina o se cancela</li>
+                        </ul>
+                        </aside>
+                    </section>
+                    <section id="gpcie02">
+                        <h5>Objetivos de Cerrar Proyecto o Fase</h5>
+                        <ul>
+                            <li>Confirmar la extensión con la que los Entregables se han completado y 
+                                los Objetivos del Proyecto / Fase se han cumplido</li>
+                            <li class='fragment'>Se ha obtenido aceptación formal de los Entregables</li>
+                            <li class='fragment'>Se confirma que los acuerdos de operación y mantenimiento siguen en
+                            marcha, de forma apropiada</li>
+                            <li class='fragment'>Se documenta los elementos extraordinarios y se recomiendan acciones de
+                            continuación, de forma apropiada</li>
+                            <li class='fragment'>Cierre / afianzación de todos los contratos</li>
+                            <li class='fragment'>Obtener las Lecciones Aprendidas</li>
+                            <li class='fragment'>Atar los cabos sueltos</li>
+                            <li class='fragment'>Preparar el Informe Final del Proyecto</li>
+                            <li class='fragment'>Comunicarse con todos los Interesados</li>
+                            <li class='fragment'>Celebrar el éxito</li>
+                        </ul>
+                    </section>
+                    <section id="gpcie03">
+                        <h5>Cierre de Contratos</h5>
+                        <blockquote>
+                            &laquo;Actividades e interacciones necesarias para asentar y cerrar cualquier contrato 
+                            que se haya establecido en el proyecto.&raquo;
+                        </blockquote>
+                        <ul>
+                            <li class='fragment nobu'>Esto incluye:
+                            <ul>
+                                <li>Verificación del producto</li>
+                                <li>Financiaciones</li>
+                                <li>Cierre administrativo</li>
+                            </ul></li>
+                        </ul>
+                        <p class='fragment'>La finalización prematura de un contrato o proyecto es un caso especial de
+                        Cierre de Contratos</p>
+
+                        <aside class='notes'>
+                            <ul>
+                                <li>Verificación del producto - Todo el trabajo se ha completado correctamente
+                                y de manera satisfactoria</li>
+                                <li>Financiaciones</li>
+                                <li>Cierre administrativo - Actualizar los registros de contratos para que
+                                reflejen los resultados finales y archivar la información para futuros
+                                usos</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section id="gpcie06">
+                        <h5>Concluir el Proyecto</h5>
+                        <ul>
+                            <li>Archivar los documentos del Proyecto, los acuerdo y las aprobaciones, los
+                            contratos y las Lecciones Aprendidas</li>
+                            <li class='fragment'>Llevar a cabo evaluaciones de rendimiento del personal y liberar
+                            formalmente al personal para que puedan ser asignados a otros proyectos</li>
+                            <li class='fragment'>Devolver / Liberar todo el equipamiento que se ha usado en el proyecto</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section id="docproy">
+                        <h4>Documentación del proyecto</h4>
+                        <img class='nobor' height='500px' src="img/listadoc.svg" />
+                    </section>
+                </section>
+                <section>
+                    <section id="respprof00">
+                        <h4>Responsabilidad Profesional</h4>
+                        <a href="https://www.pmi.org/en/About-Us/Ethics/~/media/PDF/Ethics/ap_pmicodeofethics_SPA-Final.ashx">
+                            <img src="img/codigo.png" />
+                        </a>
+                    </section>
+                    <section id="respprof03">
+                        <h4>Los cuatro valores éticos más importantes</h4>
+                        <ul>
+                            <li><strong>Responsabilidad</strong>
+                            <ul>
+                                <li>Ser el responsable final de nuestras acciones mientras desarrollamos
+                                nuestras competencias como profesionales de la gestión de proyectos y en
+                                nuestro comportamiento en el lugar de trabajo y como voluntarios</li>
+                            </ul></li>
+                            <li class='fragment'><strong>Respeto</strong>
+                            <ul>
+                                <li>Comportamiento ante los demás que promueva un ambiente de cooperación y
+                                confianza</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="respprof04">
+                        <h5>Los cuatro valores éticos más importantes</h5>
+                        <ul>
+                            <li><strong>Equidad</strong>
+                            <ul>
+                                <li>Comportamiento ante los demás que muestre que tomamos decisiones de manera
+                                imparcial y bajo criterios objetivos, por el bien común y no por
+                                favoritismos o intereses personales</li>
+                            </ul></li>
+                            <li class='fragment'><strong>Honestidad</strong>
+                            <ul>
+                                <li>Decir siempre la verdad y actuar de manera fiable, sin ocultar información
+                                sobre la verdad que llevara a equívoco a otros</li>
+                            </ul></li>
+                        </ul>
+                    </section>
+                    <section id="respprof05">
+                    <blockquote>
+                        &laquo;A cadet will not lie, cheat, steal, or tolerate those who do.&raquo;
+                    </blockquote>
+                        <p class='nano'>West Point's Cadet Honor Code</p>
+                    </section>
+                </section>
+                <section>
                     <section id='starshell'>
-                        <h2>Evaluación</h2>
+                        <h3>Retrospectiva</h3>
                         <img class='nobor' src="img/estrella_mar.svg" />
                     </section>
+                </section>
+                <section id="muchas-gracias">
+                    <h1>Muchas gracias&hellip;</h1>
                 </section>
             </div>
         </div>
